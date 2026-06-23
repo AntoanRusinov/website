@@ -189,6 +189,41 @@
     <!-- Scripts -->
     <script src="../../scripts/collection-template.js"></script>
     <script>
+        // Mobile Navigation (same behavior as the homepage)
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        if (mobileNavToggle && mobileNav) {
+            mobileNavToggle.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+                mobileNavToggle.textContent = mobileNav.classList.contains('active') ? '×' : '≡';
+            });
+        }
+
+        // Mobile dropdown submenu - prevent the whole menu from closing
+        const mobileDropdownToggle = document.querySelector('.dropdown-mobile > a');
+        const mobileSubmenu = document.querySelector('.mobile-submenu');
+
+        if (mobileDropdownToggle && mobileSubmenu) {
+            mobileDropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                mobileSubmenu.classList.toggle('active');
+                mobileDropdownToggle.textContent = mobileSubmenu.classList.contains('active')
+                    ? 'Collections -'
+                    : 'Collections +';
+            });
+        }
+
+        // Close mobile nav when clicking a link (except the dropdown toggle)
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a:not(.dropdown-mobile > a)');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                mobileNavToggle.textContent = '≡';
+            });
+        });
+
         // Form submission (prevent default)
         const form = document.querySelector('form');
         if (form) {
