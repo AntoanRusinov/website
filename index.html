@@ -584,6 +584,18 @@
          margin-top: 10px;
       }
 
+      /* Invisible bridge over the 10px gap so moving the cursor from the
+         toggle to the items keeps .dropdown:hover active (prevents the menu
+         from collapsing before the link can be clicked). */
+      .dropdown-content::before {
+         content: '';
+         position: absolute;
+         top: -10px;
+         left: 0;
+         width: 100%;
+         height: 10px;
+      }
+
       .dropdown:hover .dropdown-content {
          display: block;
       }
