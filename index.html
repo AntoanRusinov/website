@@ -5,702 +5,25 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>IVANKA RAYKOVA | Contemporary Fashion Design</title>
+   <meta name="description"
+      content="Ivanka Raykova — contemporary fashion design celebrating cultural heritage through traditional Bulgarian embroidery and modern silhouettes. Handmade, made-to-order, sustainable.">
+   <link rel="canonical" href="https://ivankaraykova.com/">
+   <link rel="icon" href="images/1.jpg" type="image/jpeg">
+   <link rel="apple-touch-icon" href="images/1.jpg">
+   <!-- Open Graph / social sharing -->
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="IVANKA RAYKOVA | Contemporary Fashion Design">
+   <meta property="og:description"
+      content="Contemporary fashion celebrating cultural heritage through traditional Bulgarian embroidery and modern silhouettes.">
+   <meta property="og:url" content="https://ivankaraykova.com/">
+   <meta property="og:image" content="https://ivankaraykova.com/images/1.jpg">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="IVANKA RAYKOVA | Contemporary Fashion Design">
+   <meta name="twitter:description"
+      content="Contemporary fashion celebrating cultural heritage through traditional Bulgarian embroidery and modern silhouettes.">
+   <meta name="twitter:image" content="https://ivankaraykova.com/images/1.jpg">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   <style>
-      /* Base Styles */
-      :root {
-         --primary-color: #f8f8f8;
-         --secondary-color: #212121;
-         --accent-color: #e0e0e0;
-         --font-main: 'Arial', sans-serif;
-         --font-secondary: 'Times New Roman', serif;
-         --transition: all 0.3s ease;
-      }
-
-      * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-      }
-
-      body {
-         font-family: var(--font-main);
-         color: var(--secondary-color);
-         background-color: var(--primary-color);
-         line-height: 1.6;
-         overflow-x: hidden;
-      }
-
-      a {
-         text-decoration: none;
-         color: inherit;
-      }
-
-      ul {
-         list-style: none;
-      }
-
-      img {
-         max-width: 100%;
-         height: auto;
-         display: block;
-      }
-
-      button,
-      .btn {
-         background: none;
-         border: none;
-         cursor: pointer;
-         font-family: inherit;
-         font-size: inherit;
-         padding: 0;
-      }
-
-      .container {
-         width: 100%;
-         max-width: 1400px;
-         margin: 0 auto;
-         padding: 0 20px;
-      }
-
-      /* Typography */
-      h1,
-      h2,
-      h3,
-      h4,
-      h5 {
-         font-weight: normal;
-         line-height: 1.2;
-      }
-
-      h1 {
-         font-size: clamp(2rem, 5vw, 3.5rem);
-         letter-spacing: 1px;
-      }
-
-      h2 {
-         font-size: clamp(1.5rem, 4vw, 2.5rem);
-         margin-bottom: 2rem;
-         letter-spacing: 0.5px;
-      }
-
-      h3 {
-         font-size: clamp(1.2rem, 3vw, 1.8rem);
-         margin-bottom: 1rem;
-      }
-
-      p {
-         margin-bottom: 1.5rem;
-         font-size: clamp(0.9rem, 2vw, 1rem);
-         letter-spacing: 0.3px;
-      }
-
-      .uppercase {
-         text-transform: uppercase;
-      }
-
-      .text-center {
-         text-align: center;
-      }
-
-      /* Header */
-      header {
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         z-index: 1000;
-         background-color: rgba(248, 248, 248, 0.95);
-         transition: var(--transition);
-      }
-
-      .header-content {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         padding: 1.5rem 0;
-      }
-
-      .logo {
-         font-family: var(--font-secondary);
-         font-size: 1.8rem;
-         letter-spacing: 2px;
-      }
-
-      /* IMPORTANT: Hide the mobile toggle button by default (for desktop) */
-      .mobile-nav-toggle {
-         display: none;
-         background: none;
-         border: none;
-         font-size: 1.5rem;
-         cursor: pointer;
-         z-index: 2000;
-      }
-
-      /* Mobile Navigation */
-      .mobile-nav {
-         position: fixed;
-         top: 0;
-         right: -100%;
-         width: 100%;
-         height: 100vh;
-         background-color: var(--primary-color);
-         padding: 6rem 2rem 2rem;
-         transition: var(--transition);
-         z-index: 1500;
-         overflow-y: auto;
-      }
-
-      .mobile-nav.active {
-         right: 0;
-      }
-
-      .mobile-nav li {
-         margin-bottom: 1.5rem;
-         font-size: 1.2rem;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-      }
-
-      .mobile-submenu {
-         display: none;
-         margin: 1rem 0 0.5rem 1rem;
-         padding-left: 1rem;
-         border-left: 1px solid var(--accent-color);
-      }
-
-      .mobile-submenu.active {
-         display: block;
-      }
-
-      .mobile-submenu li {
-         margin-bottom: 1rem;
-         font-size: 1rem;
-      }
-
-      .dropdown-mobile>a::after {
-         content: ' +';
-         font-size: 1.2rem;
-      }
-
-      /* Hero Section */
-      .hero {
-         height: 100vh;
-         margin-top: 0;
-         position: relative;
-         overflow: hidden;
-      }
-
-      .hero-slide {
-         height: 100%;
-         width: 100%;
-         position: absolute;
-         top: 0;
-         left: 0;
-         opacity: 1;
-         transition: opacity 1s ease;
-      }
-
-      .hero-img {
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-         object-position: center;
-      }
-
-      .hero-content {
-         position: absolute;
-         bottom: 10%;
-         left: 0;
-         width: 100%;
-         padding: 0 2rem;
-         color: white;
-         text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-      }
-
-      .hero-title {
-         font-family: var(--font-secondary);
-         margin-bottom: 1rem;
-      }
-
-      .hero-subtitle {
-         font-size: clamp(1rem, 3vw, 1.3rem);
-         max-width: 600px;
-      }
-
-      /* Collections */
-      .collections {
-         padding: 8rem 0;
-      }
-
-      .section-title {
-         text-align: center;
-         margin-bottom: 4rem;
-         font-family: var(--font-secondary);
-      }
-
-      .collection-grid {
-         display: grid;
-         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-         gap: 2rem;
-      }
-
-      .collection-item {
-         position: relative;
-         overflow: hidden;
-         transition: var(--transition);
-         cursor: pointer;
-      }
-
-      .collection-img {
-         aspect-ratio: 2/3;
-         object-fit: cover;
-         transition: transform 0.5s ease;
-      }
-
-      .collection-item:hover .collection-img {
-         transform: scale(1.03);
-      }
-
-      /* Modal */
-      .modal {
-         display: none;
-         position: fixed;
-         z-index: 2000;
-         left: 0;
-         top: 0;
-         width: 100%;
-         height: 100%;
-         overflow: auto;
-         background-color: rgba(0, 0, 0, 0.9);
-      }
-
-      .modal-content {
-         margin: auto;
-         display: block;
-         max-width: 90%;
-         max-height: 90%;
-      }
-
-      .close-modal {
-         position: absolute;
-         top: 15px;
-         right: 35px;
-         color: #f1f1f1;
-         font-size: 40px;
-         font-weight: bold;
-         transition: 0.3s;
-         cursor: pointer;
-      }
-
-      .close-modal:hover,
-      .close-modal:focus {
-         color: #bbb;
-         text-decoration: none;
-         cursor: pointer;
-      }
-
-      /* About */
-      .about {
-         padding: 8rem 0;
-         background-color: var(--accent-color);
-      }
-
-      .about-content {
-         display: flex;
-         flex-wrap: wrap;
-         align-items: center;
-         gap: 4rem;
-      }
-
-      .about-image {
-         flex: 1;
-         min-width: 300px;
-      }
-
-      .about-image img {
-         width: 100%;
-         height: auto;
-      }
-
-      .about-text {
-         flex: 1;
-         min-width: 300px;
-      }
-
-      .about-title {
-         font-family: var(--font-secondary);
-         margin-bottom: 2rem;
-      }
-
-      /* Atelier */
-      .atelier {
-         padding: 8rem 0;
-      }
-
-      .atelier-content {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         text-align: center;
-         max-width: 800px;
-         margin: 0 auto;
-      }
-
-      /* Atelier text styling */
-      .atelier h3,
-      .atelier h4,
-      .atelier ol,
-      .atelier ul,
-      .atelier li {
-         font-family: var(--font-main);
-         font-size: clamp(0.9rem, 2vw, 1rem);
-         font-weight: normal;
-         letter-spacing: 0.3px;
-         line-height: 1.6;
-      }
-
-      .atelier h3,
-      .atelier h4 {
-         font-weight: bold;
-         margin-bottom: 1.5rem;
-         margin-top: 1.5rem;
-      }
-
-      .atelier ol,
-      .atelier ul {
-         margin-bottom: 1.5rem;
-      }
-
-      .atelier li {
-         margin-bottom: 1rem;
-      }
-
-      /* Contact */
-      .contact {
-         padding: 8rem 0;
-         background-color: var(--secondary-color);
-         color: var(--primary-color);
-      }
-
-      .contact-content {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-         gap: 4rem;
-      }
-
-      .contact-info,
-      .contact-form {
-         flex: 1;
-         min-width: 300px;
-      }
-
-      .contact-title {
-         font-family: var(--font-secondary);
-         margin-bottom: 2rem;
-      }
-
-      .contact-item {
-         margin-bottom: 1.5rem;
-      }
-
-      .contact-label {
-         display: block;
-         font-size: 0.9rem;
-         margin-bottom: 0.5rem;
-         letter-spacing: 1px;
-         text-transform: uppercase;
-      }
-
-      .form-group {
-         margin-bottom: 1.5rem;
-      }
-
-      .form-control {
-         width: 100%;
-         padding: 0.8rem;
-         background-color: transparent;
-         border: 1px solid var(--primary-color);
-         color: var(--primary-color);
-         font-family: inherit;
-      }
-
-      .form-control::placeholder {
-         color: rgba(248, 248, 248, 0.6);
-      }
-
-      textarea.form-control {
-         resize: vertical;
-         min-height: 150px;
-      }
-
-      .btn-submit {
-         padding: 1rem 2rem;
-         background-color: var(--primary-color);
-         color: var(--secondary-color);
-         text-transform: uppercase;
-         letter-spacing: 1px;
-         transition: var(--transition);
-         border: none;
-         cursor: pointer;
-      }
-
-      .btn-submit:hover {
-         background-color: rgba(248, 248, 248, 0.8);
-      }
-
-      /* Footer */
-      footer {
-         padding: 4rem 0;
-         background-color: var(--primary-color);
-      }
-
-      .footer-content {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-         gap: 2rem;
-      }
-
-      .footer-logo {
-         font-family: var(--font-secondary);
-         font-size: 1.5rem;
-         letter-spacing: 2px;
-         margin-bottom: 1rem;
-      }
-
-      .footer-col {
-         flex: 1;
-         min-width: 200px;
-      }
-
-      .footer-heading {
-         margin-bottom: 1.5rem;
-         font-size: 0.9rem;
-         letter-spacing: 1px;
-         text-transform: uppercase;
-      }
-
-      .footer-nav li {
-         margin-bottom: 0.5rem;
-         font-size: 0.9rem;
-      }
-
-      .footer-nav a:hover {
-         text-decoration: underline;
-      }
-
-      .social-links {
-         display: flex;
-         gap: 1rem;
-         margin-top: 1rem;
-      }
-
-      .social-link {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         width: 40px;
-         height: 40px;
-         border: 1px solid var(--secondary-color);
-         transition: var(--transition);
-         font-size: 1.2rem;
-      }
-
-      .social-link:hover {
-         background-color: var(--secondary-color);
-         color: var(--primary-color);
-      }
-
-      .copyright {
-         margin-top: 4rem;
-         padding-top: 2rem;
-         border-top: 1px solid rgba(33, 33, 33, 0.1);
-         text-align: center;
-         font-size: 0.8rem;
-      }
-
-      /* Desktop Navigation */
-      .nav-desktop {
-         display: flex;
-         align-items: center;
-      }
-
-      .nav-desktop li {
-         margin-left: 2.5rem;
-         font-size: 0.9rem;
-         letter-spacing: 1px;
-         text-transform: uppercase;
-         position: relative;
-      }
-
-      .nav-desktop a {
-         position: relative;
-         transition: var(--transition);
-      }
-
-      .nav-desktop a:hover {
-         opacity: 0.7;
-      }
-
-      .nav-desktop a::after {
-         content: '';
-         position: absolute;
-         width: 0;
-         height: 1px;
-         bottom: -2px;
-         left: 0;
-         background-color: var(--secondary-color);
-         transition: var(--transition);
-      }
-
-      .nav-desktop a:hover::after {
-         width: 100%;
-      }
-
-      /* Dropdown menu styles */
-      .dropdown {
-         position: relative;
-         display: inline-block;
-      }
-
-      .dropdown-toggle::after {
-         content: '▼';
-         font-size: 0.7rem;
-         margin-left: 5px;
-         vertical-align: middle;
-      }
-
-      .dropdown-content {
-         display: none;
-         position: absolute;
-         top: 100%;
-         left: 0;
-         background-color: var(--primary-color);
-         min-width: 200px;
-         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-         z-index: 1000;
-         margin-top: 10px;
-      }
-
-      /* Invisible bridge over the 10px gap so moving the cursor from the
-         toggle to the items keeps .dropdown:hover active (prevents the menu
-         from collapsing before the link can be clicked). */
-      .dropdown-content::before {
-         content: '';
-         position: absolute;
-         top: -10px;
-         left: 0;
-         width: 100%;
-         height: 10px;
-      }
-
-      .dropdown:hover .dropdown-content {
-         display: block;
-      }
-
-      .dropdown-content a {
-         color: var(--secondary-color);
-         padding: 12px 16px;
-         text-decoration: none;
-         display: block;
-         font-size: 0.85rem;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-      }
-
-      .dropdown-content a:hover {
-         background-color: var(--accent-color);
-      }
-
-      .dropdown-toggle:hover::after {
-         opacity: 0.7;
-      }
-
-      /* Mobile-only styles */
-      @media screen and (max-width: 768px) {
-         .nav-desktop {
-            display: none;
-         }
-
-         .mobile-nav-toggle {
-            display: block;
-         }
-
-         .mobile-nav {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 100%;
-            height: 100vh;
-            background-color: var(--primary-color);
-            padding: 6rem 2rem 2rem;
-            transition: var(--transition);
-            z-index: 1500;
-            overflow-y: auto;
-         }
-
-         .mobile-nav.active {
-            right: 0;
-         }
-
-         .mobile-nav li {
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-         }
-
-         .mobile-submenu {
-            display: none;
-            margin: 1rem 0 0.5rem 1rem;
-            padding-left: 1rem;
-            border-left: 1px solid var(--accent-color);
-         }
-
-         .mobile-submenu.active {
-            display: block;
-         }
-
-         .mobile-submenu li {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-         }
-
-         .dropdown-mobile>a::after {
-            content: ' +';
-            font-size: 1.2rem;
-         }
-      }
-
-      /* Hide mobile nav on larger screens */
-      @media screen and (min-width: 769px) {
-         .mobile-nav {
-            display: none !important;
-         }
-
-         .mobile-nav-toggle {
-            display: none !important;
-         }
-      }
-
-      .service-separator {
-         width: 100%;
-         height: 1px;
-         background-color: var(--accent-color);
-         border: none;
-         margin: 3rem 0;
-      }
-
-      .section-separator {
-         width: 100%;
-         height: 1px;
-         background-color: var(--accent-color);
-         border: none;
-         margin: 2rem 0;
-      }
-   </style>
+   <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
@@ -726,8 +49,9 @@
                </ul>
             </nav>
             <!-- Mobile toggle navigation -->
-            <button class="mobile-nav-toggle">≡</button>
-            <div class="mobile-nav">
+            <button class="mobile-nav-toggle" aria-label="Open navigation menu" aria-expanded="false"
+               aria-controls="mobile-nav">≡</button>
+            <div class="mobile-nav" id="mobile-nav">
                <ul>
                   <li class="dropdown-mobile">
                      <a href="#">Collections</a>
@@ -748,7 +72,7 @@
    <!-- Hero Section -->
    <section class="hero">
       <div class="hero-slide active">
-         <img src="images/1.jpg" alt="Fashion Collection" class="hero-img">
+         <img src="images/1.jpg" alt="Fashion Collection" class="hero-img" fetchpriority="high">
          <div class="container">
             <div class="hero-content">
                <h1 class="hero-title">IVANKA RAYKOVA</h1>
@@ -765,20 +89,20 @@
             <!-- First item (visible on both mobile and desktop) -->
             <div class="collection-item main-item">
                <img src="collections/bulgarian-broderie/images/1.jpg" alt="Bulgarian broderie collection"
-                  class="collection-img" onclick="window.location.href='collections/bulgarian-broderie/index.html'">
+                  class="collection-img" loading="lazy" onclick="window.location.href='collections/bulgarian-broderie/index.html'">
             </div>
             <!-- Additional items (visible only on desktop) -->
             <div class="collection-item desktop-only">
                <img src="collections/bulgarian-broderie/images/2.jpg" alt="Bulgarian broderie collection"
-                  class="collection-img" onclick="window.location.href='collections/bulgarian-broderie/index.html'">
+                  class="collection-img" loading="lazy" onclick="window.location.href='collections/bulgarian-broderie/index.html'">
             </div>
             <div class="collection-item desktop-only">
                <img src="collections/bulgarian-broderie/images/3.jpg" alt="Bulgarian broderie collection"
-                  class="collection-img" onclick="window.location.href='collections/bulgarian-broderie/index.html'">
+                  class="collection-img" loading="lazy" onclick="window.location.href='collections/bulgarian-broderie/index.html'">
             </div>
             <div class="collection-item desktop-only">
                <img src="collections/bulgarian-broderie/images/4.jpg" alt="Bulgarian broderie collection"
-                  class="collection-img" onclick="window.location.href='collections/bulgarian-broderie/index.html'">
+                  class="collection-img" loading="lazy" onclick="window.location.href='collections/bulgarian-broderie/index.html'">
             </div>
          </div>
       </div>
@@ -788,7 +112,7 @@
       <div class="container">
          <div class="about-content">
             <div class="about-image">
-               <img src="images/10.jpg" alt="Ivanka Raykova - Designer">
+               <img src="images/10.jpg" alt="Ivanka Raykova - Designer" loading="lazy">
             </div>
             <div class="about-text">
                <h2 class="about-title">About the Designer</h2>
@@ -948,15 +272,15 @@
                <p>Contemporary fashion design celebrating cultural heritage through traditional embroidery and modern
                   silhouettes.</p>
                <div class="social-links">
-                  <a href="https://www.instagram.com/ivanka.atelier/" class="social-link" target="_blank"
+                  <a href="https://www.instagram.com/ivanka.atelier/" class="social-link" target="_blank" rel="noopener noreferrer"
                      aria-label="Instagram">
                      <i class="fab fa-instagram"></i>
                   </a>
-                  <a href="https://www.facebook.com/Bulgaritasdesign" class="social-link" target="_blank"
+                  <a href="https://www.facebook.com/Bulgaritasdesign" class="social-link" target="_blank" rel="noopener noreferrer"
                      aria-label="Facebook">
                      <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.tiktok.com/@ivanka.atelier" class="social-link" target="_blank"
+                  <a href="https://www.tiktok.com/@ivanka.atelier" class="social-link" target="_blank" rel="noopener noreferrer"
                      aria-label="TikTok">
                      <i class="fab fa-tiktok"></i>
                   </a>
@@ -982,9 +306,9 @@
             <div class="footer-col">
                <h4 class="footer-heading">Information</h4>
                <ul class="footer-nav">
-                  <li><a href="sustainability.html" target="_blank">Sustainability</a></li>
-                  <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
-                  <li><a href="terms-and-conditions.html" target="_blank">Terms & Conditions</a></li>
+                  <li><a href="sustainability.html" target="_blank" rel="noopener noreferrer">Sustainability</a></li>
+                  <li><a href="privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                  <li><a href="terms-and-conditions.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
                </ul>
             </div>
          </div>
@@ -999,8 +323,10 @@
       const mobileNav = document.querySelector('.mobile-nav');
 
       mobileNavToggle.addEventListener('click', () => {
-         mobileNav.classList.toggle('active');
-         mobileNavToggle.textContent = mobileNav.classList.contains('active') ? '×' : '≡';
+         const isOpen = mobileNav.classList.toggle('active');
+         mobileNavToggle.textContent = isOpen ? '×' : '≡';
+         mobileNavToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+         mobileNavToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
       });
 
       // Handle mobile dropdown menu - with fix to prevent entire menu from closing
@@ -1024,6 +350,8 @@
          link.addEventListener('click', () => {
             mobileNav.classList.remove('active');
             mobileNavToggle.textContent = '≡';
+            mobileNavToggle.setAttribute('aria-expanded', 'false');
+            mobileNavToggle.setAttribute('aria-label', 'Open navigation menu');
          });
       });
 

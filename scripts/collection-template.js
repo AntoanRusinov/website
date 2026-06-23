@@ -7,9 +7,6 @@ async function loadCollectionData() {
         }
         const data = await response.json();
 
-        // Log the number of items found
-        console.log(`Loading ${data.items.length} items from collection`);
-
         displayCollection(data);
     } catch (error) {
         console.error('Error loading collection data:', error);
@@ -58,9 +55,10 @@ function displayCollection(data) {
         itemDiv.className = 'collection-item';
 
         itemDiv.innerHTML = `
-            <img src="images/${item.image}" 
+            <img src="images/${item.image}"
                  alt="${item.title}"
-                 class="collection-img">
+                 class="collection-img"
+                 loading="lazy">
         `;
 
         // Add click event to show detail view

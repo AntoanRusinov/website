@@ -21,6 +21,9 @@ function displayCollectionPreview(data) {
         return;
     }
 
+    // Remember the data so the resize handler can re-render correctly
+    window.homeCollectionData = data;
+
     gridContainer.innerHTML = '';
 
     // Always create first item
@@ -28,9 +31,10 @@ function displayCollectionPreview(data) {
     const firstItemDiv = document.createElement('div');
     firstItemDiv.className = 'collection-item';
     firstItemDiv.innerHTML = `
-        <img src="collections/bulgarian-broderie/images/${firstItem.image}" 
+        <img src="collections/bulgarian-broderie/images/${firstItem.image}"
              alt="${firstItem.title}"
-             class="collection-img">
+             class="collection-img"
+             loading="lazy">
     `;
     firstItemDiv.addEventListener('click', () => {
         window.location.href = 'collections/bulgarian-broderie/index.html';
@@ -43,9 +47,10 @@ function displayCollectionPreview(data) {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'collection-item desktop-only';
             itemDiv.innerHTML = `
-                <img src="collections/bulgarian-broderie/images/${item.image}" 
+                <img src="collections/bulgarian-broderie/images/${item.image}"
                      alt="${item.title}"
-                     class="collection-img">
+                     class="collection-img"
+                     loading="lazy">
             `;
             itemDiv.addEventListener('click', () => {
                 window.location.href = 'collections/bulgarian-broderie/index.html';
@@ -55,11 +60,17 @@ function displayCollectionPreview(data) {
     }
 }
 
-// Handle window resize
+// Handle window resize - re-render so the desktop-only preview items appear
+// or hide when crossing the 768px breakpoint. Debounced to avoid thrashing.
+let resizeTimer;
 window.addEventListener('resize', () => {
-    if (window.collectionData) {
-        displayCollectionPreview(window.collectionData);
+    if (!window.homeCollectionData) {
+        return;
     }
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        displayCollectionPreview(window.homeCollectionData);
+    }, 150);
 });
 
 // Initialize on page load
