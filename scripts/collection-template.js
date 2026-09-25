@@ -1,5 +1,16 @@
 // Builds a collection page from the data.json next to it and drives the
 // product detail dialog.
+//
+// data.json shape:
+//   title, description            page heading and intro
+//   video.youtubeId, video.title  optional; renders the embedded player
+//   imageWidth                    width of the full-size <n>.jpg files (default 1600)
+//   items[]                       id, title, description, image, material, fabric,
+//                                 craftsmanship, optional orientation: "landscape"
+//
+// Image files per item: <n>.jpg (full size, detail view), <n>-800.jpg (grid
+// thumbnail, 800x1200). Landscape photos also have <n>-1200.jpg, a 1200x1800
+// crop, because the grid frame is 2:3 and the full image has a different shape.
 
 const IMAGE_DIR = 'images/';
 
@@ -17,16 +28,43 @@ async function loadCollectionData() {
     }
 }
 
-// Thumbnails are served from a small variant when one exists; the full
-// image is used in the detail view and as the large srcset candidate.
-function thumbnailSources(image) {
+function variant(image, suffix) {
     const dot = image.lastIndexOf('.');
-    const small = `${image.slice(0, dot)}-800${image.slice(dot)}`;
+    return `${IMAGE_DIR}${image.slice(0, dot)}${suffix}${image.slice(dot)}`;
+}
+
+function thumbnailSources(item, fullWidth) {
+    const small = variant(item.image, '-800');
+    const large = item.orientation === 'landscape'
+        ? `${variant(item.image, '-1200')} 1200w`
+        : `${IMAGE_DIR}${item.image} ${fullWidth}w`;
     return {
-        src: IMAGE_DIR + small,
-        srcset: `${IMAGE_DIR}${small} 800w, ${IMAGE_DIR}${image} 1600w`,
+        src: small,
+        srcset: `${small} 800w, ${large}`,
         sizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px'
     };
+}
+
+function renderVideo(video) {
+    const container = document.getElementById('collection-video');
+    if (!container) {
+        return;
+    }
+    if (!video || !video.youtubeId) {
+        container.hidden = true;
+        return;
+    }
+    const iframe = document.createElement('iframe');
+    iframe.width = 800;
+    iframe.height = 450;
+    iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(video.youtubeId)}?autoplay=1&mute=1&rel=0`;
+    iframe.title = video.title || 'Collection video';
+    iframe.loading = 'lazy';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    container.replaceChildren(iframe);
+    container.hidden = false;
 }
 
 function displayCollection(data) {
@@ -37,7 +75,9 @@ function displayCollection(data) {
 
     document.getElementById('collection-title').textContent = data.title;
     document.getElementById('collection-description').textContent = data.description;
+    renderVideo(data.video);
 
+    const fullWidth = data.imageWidth || 1600;
     const grid = document.getElementById('collection-grid');
     grid.replaceChildren();
 
@@ -48,7 +88,7 @@ function displayCollection(data) {
         button.setAttribute('aria-label', `View details: ${item.title}`);
 
         const img = document.createElement('img');
-        const sources = thumbnailSources(item.image);
+        const sources = thumbnailSources(item, fullWidth);
         img.src = sources.src;
         img.srcset = sources.srcset;
         img.sizes = sources.sizes;
@@ -74,6 +114,16 @@ function detailElement() {
     return document.getElementById('product-detail');
 }
 
+// Fills a text element and hides its wrapper when the value is empty, so
+// looks without a written description or specs show only the photo and title.
+function setField(id, value, wrapperSelector) {
+    const el = document.getElementById(id);
+    const text = (value || '').trim();
+    el.textContent = text;
+    const wrapper = wrapperSelector ? el.closest(wrapperSelector) : el;
+    wrapper.hidden = text === '';
+}
+
 function openDetail(index) {
     const item = window.collectionData.items[index];
     const detail = detailElement();
@@ -82,10 +132,12 @@ function openDetail(index) {
     img.src = IMAGE_DIR + item.image;
     img.alt = item.title;
     document.getElementById('detail-title').textContent = item.title;
-    document.getElementById('detail-description').textContent = item.description;
-    document.getElementById('detail-material').textContent = item.material;
-    document.getElementById('detail-fabric').textContent = item.fabric;
-    document.getElementById('detail-craftsmanship').textContent = item.craftsmanship;
+    setField('detail-description', item.description);
+    setField('detail-material', item.material, '.spec-item');
+    setField('detail-fabric', item.fabric, '.spec-item');
+    setField('detail-craftsmanship', item.craftsmanship, '.spec-item');
+    const anySpec = [item.material, item.fabric, item.craftsmanship].some(v => (v || '').trim() !== '');
+    detail.querySelector('.detail-specs').hidden = !anySpec;
 
     lastFocused = document.activeElement;
     detail.hidden = false;
