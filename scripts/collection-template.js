@@ -1,125 +1,153 @@
-// Load and display collection data
+// Builds a collection page from the data.json next to it and drives the
+// product detail dialog.
+
+const IMAGE_DIR = 'images/';
+
 async function loadCollectionData() {
+    const grid = document.getElementById('collection-grid');
     try {
         const response = await fetch('data.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = await response.json();
-
-        displayCollection(data);
+        displayCollection(await response.json());
     } catch (error) {
         console.error('Error loading collection data:', error);
-        document.getElementById('collection-grid').innerHTML =
-            '<p>Error loading collection. Please try again later.</p>';
+        grid.textContent = 'Error loading collection. Please try again later.';
     }
 }
 
-// Display collection data
+// Thumbnails are served from a small variant when one exists; the full
+// image is used in the detail view and as the large srcset candidate.
+function thumbnailSources(image) {
+    const dot = image.lastIndexOf('.');
+    const small = `${image.slice(0, dot)}-800${image.slice(dot)}`;
+    return {
+        src: IMAGE_DIR + small,
+        srcset: `${IMAGE_DIR}${small} 800w, ${IMAGE_DIR}${image} 1600w`,
+        sizes: '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px'
+    };
+}
+
 function displayCollection(data) {
-    if (!data || !data.items || !Array.isArray(data.items)) {
+    if (!data || !Array.isArray(data.items)) {
         console.error('Invalid data format:', data);
         return;
     }
 
-    // Set title and description
     document.getElementById('collection-title').textContent = data.title;
-
-    // Only add video if it doesn't already exist
-    const existingVideo = document.querySelector('.collection-video');
-    if (!existingVideo) {
-        const videoHTML = `
-            <div class="collection-video">
-                <iframe width="100%" height="450"
-                    src="https://www.youtube.com/embed/IGnrsP5Ec30?autoplay=1&mute=0&vq=hd1080&hd=1"
-                    title="Bulgarian Broderie Collection" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        `;
-
-        // Insert video before description
-        const descriptionElement = document.getElementById('collection-description');
-        descriptionElement.insertAdjacentHTML('beforebegin', videoHTML);
-    }
-
     document.getElementById('collection-description').textContent = data.description;
 
-    const gridContainer = document.getElementById('collection-grid');
-    gridContainer.innerHTML = '';
+    const grid = document.getElementById('collection-grid');
+    grid.replaceChildren();
 
-    // Loop through all items in the data.json
     data.items.forEach((item, index) => {
-        const itemDiv = document.createElement('div');
-        itemDiv.className = 'collection-item';
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'collection-item';
+        button.setAttribute('aria-label', `View details: ${item.title}`);
 
-        itemDiv.innerHTML = `
-            <img src="images/${item.image}"
-                 alt="${item.title}"
-                 class="collection-img"
-                 loading="lazy">
-        `;
+        const img = document.createElement('img');
+        const sources = thumbnailSources(item.image);
+        img.src = sources.src;
+        img.srcset = sources.srcset;
+        img.sizes = sources.sizes;
+        img.width = 800;
+        img.height = 1200;
+        img.alt = item.title;
+        img.className = 'collection-img';
+        img.loading = index < 3 ? 'eager' : 'lazy';
 
-        // Add click event to show detail view
-        itemDiv.addEventListener('click', () => openDetail(index));
-        gridContainer.appendChild(itemDiv);
+        button.appendChild(img);
+        button.addEventListener('click', () => openDetail(index));
+        grid.appendChild(button);
     });
 
-    // Store data for detail view
     window.collectionData = data;
 }
 
-// Open detail view
+// ----- Detail dialog -----
+
+let lastFocused = null;
+
+function detailElement() {
+    return document.getElementById('product-detail');
+}
+
 function openDetail(index) {
     const item = window.collectionData.items[index];
+    const detail = detailElement();
 
-    // Update detail view with item data
-    document.getElementById('detail-img').src = `images/${item.image}`;
-    document.getElementById('detail-img').alt = item.title;
+    const img = document.getElementById('detail-img');
+    img.src = IMAGE_DIR + item.image;
+    img.alt = item.title;
     document.getElementById('detail-title').textContent = item.title;
     document.getElementById('detail-description').textContent = item.description;
     document.getElementById('detail-material').textContent = item.material;
     document.getElementById('detail-fabric').textContent = item.fabric;
     document.getElementById('detail-craftsmanship').textContent = item.craftsmanship;
 
-    // Show the detail view
-    document.getElementById('product-detail').style.display = 'block';
+    lastFocused = document.activeElement;
+    detail.hidden = false;
+    detail.classList.add('open');
+    detail.scrollTop = 0;
     document.body.style.overflow = 'hidden';
+    document.getElementById('closeDetailBtn').focus();
 }
 
-// Close detail view
-function closeDetail(e) {
-    if (e) {
-        e.preventDefault();
-        e.stopPropagation();
+function closeDetail() {
+    const detail = detailElement();
+    if (!detail || detail.hidden) {
+        return;
     }
-    const detailView = document.getElementById('product-detail');
-    if (detailView) {
-        detailView.style.display = 'none';
-        document.body.style.overflow = 'auto';
+    detail.classList.remove('open');
+    detail.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocused && typeof lastFocused.focus === 'function') {
+        lastFocused.focus();
     }
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function () {
-    // Load collection data
+// Keep keyboard focus inside the dialog while it is open.
+function trapFocus(event) {
+    const detail = detailElement();
+    if (event.key !== 'Tab' || detail.hidden) {
+        return;
+    }
+    const focusable = detail.querySelectorAll('button, [href], [tabindex]:not([tabindex="-1"])');
+    if (focusable.length === 0) {
+        return;
+    }
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
     loadCollectionData();
 
-    // Add click event listener to close button
-    const closeBtn = document.getElementById('closeDetailBtn');
-    if (closeBtn) {
-        closeBtn.addEventListener('click', closeDetail);
-    }
+    const detail = detailElement();
+    document.getElementById('closeDetailBtn').addEventListener('click', closeDetail);
 
-    // Handle escape key
-    window.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') {
-            e.preventDefault(); // Prevent default escape behavior
-            const detailView = document.getElementById('product-detail');
-            if (detailView && detailView.style.display === 'block') {
-                closeDetail();
-            }
+    // Click on the dark backdrop (outside the content) closes the dialog.
+    detail.addEventListener('click', (event) => {
+        if (event.target === detail) {
+            closeDetail();
         }
+    });
+
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !detail.hidden) {
+            event.preventDefault();
+            closeDetail();
+            return;
+        }
+        trapFocus(event);
     });
 });

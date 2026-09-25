@@ -1,0 +1,15 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tooling and scratch files
+.claude/
+node_modules/
+*.log
+pm_questions.txt
+gh_pr_desc*.md

@@ -100,10 +100,10 @@ Sustainability in fashion requires collective effort. When you appreciate an IVA
 - Consider the environmental impact of your fashion choices
 - Value quality, craftsmanship, and timeless design over trend-driven consumption
 
-We invite you to reach out with questions about our sustainability practices or suggestions for improvement at [YOUR SUSTAINABILITY EMAIL]. Your engagement helps us continue evolving as a responsible fashion brand.
+We invite you to reach out with questions about our sustainability practices or suggestions for improvement at ivanka.raykova@yahoo.com. Your engagement helps us continue evolving as a responsible fashion brand.
 
 ---
 
 _This Sustainability Statement reflects our current practices and aspirations. We update it regularly as our sustainability journey progresses._
 
-Last Updated: 12.04.2025
+Last Updated: 25.09.2026
