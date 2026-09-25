@@ -3,7 +3,7 @@
 ## 1. INTRODUCTION
 
 ### 1.1 Acceptance of Terms
-This website, https://ivankaraykova.com (the "Website"), is operated by IVANKA RAYKOVA ("we", "us", "our"). By browsing the Website you accept these Terms and Conditions ("Terms"). If you do not agree with them, please do not use the Website.
+This website, https://ivankaraykova.com (the "Website"), is operated by IVANKA RAYKOVA ("we", "us", "our"), established in Sofia, Bulgaria. By browsing the Website you accept these Terms and Conditions ("Terms"). If you do not agree with them, please do not use the Website.
 
 ### 1.2 Purpose of the Website
 The Website presents our collections and atelier services through photographs, descriptions and video. It is informational only. It offers no user accounts, no online ordering and no payments. Orders, quotations and alterations are agreed individually by email or phone and are governed by the terms agreed for that order.
@@ -71,10 +71,10 @@ To the extent permitted by law, we are not liable for any indirect or consequent
 ## 8. GOVERNING LAW AND DISPUTES
 
 ### 8.1 Governing Law
-These Terms are governed by the law of the country in which IVANKA RAYKOVA is established, without prejudice to any mandatory consumer protection rules of the country in which you live.
+These Terms are governed by the law of the Republic of Bulgaria, without prejudice to any mandatory consumer protection rules of the country in which you live.
 
 ### 8.2 Disputes
-If you have a complaint, please contact us first at ivanka.raykova@yahoo.com and we will try to resolve it with you directly. Consumers in the European Union may also use the European Commission's online dispute resolution platform at https://ec.europa.eu/consumers/odr.
+If you have a complaint, please contact us first at ivanka.raykova@yahoo.com and we will try to resolve it with you directly. Any dispute that cannot be settled this way is subject to the competent courts in Sofia, Bulgaria, unless mandatory law gives you the right to bring it before the courts of your own country. Consumers in the European Union can find out-of-court dispute resolution options on the European Commission's consumer redress pages at https://consumer-redress.ec.europa.eu, and consumers in Bulgaria may turn to the Commission for Consumer Protection (https://kzp.bg).
 
 ### 8.3 Language
 These Terms are written in English. Any translation is provided for convenience and the English text prevails.
@@ -85,6 +85,7 @@ If any provision of these Terms is found invalid, the remaining provisions conti
 ## 9. CONTACT
 
 - IVANKA RAYKOVA
+- Sofia 1000, Bulgaria
 - Email: ivanka.raykova@yahoo.com
 - Phone: +34 602 491 270 / +359 877 647 641
 

@@ -2,9 +2,9 @@
 
 ## 1. WHO WE ARE
 
-This website, https://ivankaraykova.com (the "Website"), is operated by IVANKA RAYKOVA ("we", "us", "our"). We are the data controller for any personal information processed through the Website.
+This website, https://ivankaraykova.com (the "Website"), is operated by IVANKA RAYKOVA ("we", "us", "our"), established in Sofia, Bulgaria. We are the data controller for any personal information processed through the Website.
 
-You can reach us at ivanka.raykova@yahoo.com, or by phone at +34 602 491 270 or +359 877 647 641.
+You can reach us at ivanka.raykova@yahoo.com, by phone at +34 602 491 270 or +359 877 647 641, or by post at Sofia 1000, Bulgaria.
 
 ## 2. WHAT THIS WEBSITE DOES
 
@@ -67,7 +67,7 @@ If you are in the European Economic Area, the United Kingdom or Switzerland, you
 - restrict or object to processing based on our legitimate interests;
 - receive the information you gave us in a portable format;
 - withdraw consent at any time, without affecting processing that took place before withdrawal;
-- lodge a complaint with your local data protection authority.
+- lodge a complaint with your local data protection authority. Our supervisory authority is the Bulgarian Commission for Personal Data Protection (https://cpdp.bg).
 
 To exercise any of these rights, email us at ivanka.raykova@yahoo.com. We answer within one month.
 
@@ -86,6 +86,7 @@ We update this page when our practices change. The date of the latest revision i
 ## 12. CONTACT
 
 - IVANKA RAYKOVA
+- Sofia 1000, Bulgaria
 - Email: ivanka.raykova@yahoo.com
 - Phone: +34 602 491 270 / +359 877 647 641
 
