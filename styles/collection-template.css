@@ -375,10 +375,18 @@ body {
 }
 
 .collection-item {
+    display: block;
+    width: 100%;
     position: relative;
     aspect-ratio: 2/3;
     overflow: hidden;
     cursor: pointer;
+    color: inherit;
+}
+
+.collection-item:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 4px;
 }
 
 .collection-img {
@@ -410,7 +418,8 @@ body {
     transition: all 0.4s ease;
 }
 
-.collection-item:hover::after {
+.collection-item:hover::after,
+.collection-item:focus-visible::after {
     opacity: 1;
     transform: translateY(0);
 }
@@ -492,6 +501,10 @@ body {
     overflow-y: auto;
 }
 
+.product-detail.open {
+    display: block;
+}
+
 .close-detail {
     position: fixed !important;
     top: 20px !important;
@@ -510,8 +523,17 @@ body {
     display: block !important;
 }
 
-.close-detail:hover {
+.close-detail:hover,
+.close-detail:focus-visible {
     background-color: rgba(255, 255, 255, 0.2);
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
 }
 
 .detail-container {
@@ -533,58 +555,6 @@ body {
         top: 10px;
         right: 10px;
     }
-}
-
-/* Home collection base styles */
-.home-collection {
-    display: grid;
-    gap: 2rem;
-    margin: 0 auto 4rem auto;
-}
-
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-    .home-collection {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-    }
-
-    .desktop-only {
-        display: none !important;
-    }
-
-    .main-item {
-        width: 100%;
-    }
-}
-
-/* Desktop styles */
-@media screen and (min-width: 769px) {
-    .home-collection {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 1200px;
-    }
-
-    .desktop-only {
-        display: block;
-    }
-}
-
-.collection-item {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.collection-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.collection-item:hover .collection-img {
-    transform: scale(1.05);
 }
 
 /* Contact */
@@ -695,7 +665,9 @@ footer {
 
 .footer-heading {
     margin-bottom: 1.5rem;
+    font-family: var(--font-main);
     font-size: 0.9rem;
+    font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -755,5 +727,6 @@ footer {
 
 .collection-video iframe {
     aspect-ratio: 16/9;
-    height: 450px;
+    height: auto;
+    border: 0;
 }

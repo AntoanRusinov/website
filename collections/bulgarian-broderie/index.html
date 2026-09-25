@@ -8,22 +8,25 @@
     <meta name="description"
         content="Bulgarian Broderie — a collection celebrating traditional Bulgarian embroidery reimagined in contemporary silhouettes. Handcrafted, made-to-order pieces by Ivanka Raykova.">
     <link rel="canonical" href="https://ivankaraykova.com/collections/bulgarian-broderie/">
-    <link rel="icon" href="../../images/1.jpg" type="image/jpeg">
-    <link rel="apple-touch-icon" href="../../images/1.jpg">
+    <link rel="icon" href="../../images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
     <!-- Open Graph / social sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Bulgarian Broderie | IVANKA RAYKOVA">
     <meta property="og:description"
         content="A collection celebrating traditional Bulgarian embroidery reimagined in contemporary silhouettes.">
     <meta property="og:url" content="https://ivankaraykova.com/collections/bulgarian-broderie/">
-    <meta property="og:image" content="https://ivankaraykova.com/collections/bulgarian-broderie/images/1.jpg">
+    <meta property="og:image" content="https://ivankaraykova.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bulgarian Broderie | IVANKA RAYKOVA">
     <meta name="twitter:description"
         content="A collection celebrating traditional Bulgarian embroidery reimagined in contemporary silhouettes.">
-    <meta name="twitter:image" content="https://ivankaraykova.com/collections/bulgarian-broderie/images/1.jpg">
+    <meta name="twitter:image" content="https://ivankaraykova.com/images/og-image.jpg">
     <link rel="stylesheet" href="../../styles/collection-template.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
@@ -39,7 +42,7 @@
                             <a href="#" class="dropdown-toggle">Collections</a>
                             <div class="dropdown-content">
                                 <a href="../bulgarian-broderie/">Bulgarian broderie</a>
-                                <a href="">Summer 2025</a>
+                                <!-- <a href="">Summer 2025</a> -->
                                 <!-- <a href="">Winter 2024</a> -->
                             </div>
                         </li>
@@ -57,9 +60,9 @@
                         <li class="dropdown-mobile">
                             <a href="#">Collections</a>
                             <ul class="mobile-submenu">
-                                <a href="../bulgarian-broderie/">Bulgarian broderie</a>
-                                <a href="">Summer 2025</a>
-                                <!-- <a href="">Winter 2024</a> -->
+                                <li><a href="../bulgarian-broderie/">Bulgarian broderie</a></li>
+                                <!-- <li><a href="">Summer 2025</a></li> -->
+                                <!-- <li><a href="">Winter 2024</a></li> -->
                             </ul>
                         </li>
                         <li><a href="../../index.html#about">About</a></li>
@@ -78,11 +81,11 @@
 
             <!-- Video Section -->
             <div class="collection-video">
-                <iframe width="100%" height="450"
-                    src="https://www.youtube.com/embed/IGnrsP5Ec30?autoplay=1&mute=0&quality=hd1080"
-                    title="Bulgarian Broderie Collection" frameborder="0"
+                <iframe width="800" height="450"
+                    src="https://www.youtube-nocookie.com/embed/IGnrsP5Ec30?autoplay=1&amp;mute=1&amp;rel=0"
+                    title="Bulgarian Broderie collection runway video" loading="lazy"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
 
@@ -92,14 +95,15 @@
     </main>
 
     <!-- Product Detail Modal -->
-    <div id="product-detail" class="product-detail">
-        <button id="closeDetailBtn" class="close-detail">&times;</button>
+    <div id="product-detail" class="product-detail" role="dialog" aria-modal="true" aria-labelledby="detail-title"
+        hidden>
+        <button id="closeDetailBtn" class="close-detail" aria-label="Close details">&times;</button>
         <div class="detail-container">
             <div class="detail-image">
-                <img id="detail-img" src="" alt="">
+                <img id="detail-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
             </div>
             <div class="detail-info">
-                <h2 id="detail-title" class="detail-title"></h2>
+                <h2 id="detail-title" class="detail-title">Item details</h2>
                 <p id="detail-description"></p>
                 <div class="detail-specs">
                     <div class="spec-item">
@@ -173,7 +177,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-heading">Navigation</h4>
+                    <h3 class="footer-heading">Navigation</h3>
                     <ul class="footer-nav">
                         <li><a href="../../index.html">Home</a></li>
                         <li><a href="../../index.html#about">About</a></li>
@@ -182,15 +186,15 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-heading">Collections</h4>
+                    <h3 class="footer-heading">Collections</h3>
                     <ul class="footer-nav">
                         <li><a href="../bulgarian-broderie/">Bulgarian broderie</a></li>
-                        <li><a href="">Summer 2025</a></li>
+                        <!-- <li><a href="">Summer 2025</a></li> -->
                         <!-- <li><a href="">Winter 2024</a></li> -->
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-heading">Information</h4>
+                    <h3 class="footer-heading">Information</h3>
                     <ul class="footer-nav">
                         <li><a href="../../sustainability.html" target="_blank" rel="noopener noreferrer">Sustainability</a></li>
                         <li><a href="../../privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
@@ -245,16 +249,6 @@
                 mobileNavToggle.setAttribute('aria-label', 'Open navigation menu');
             });
         });
-
-        // Form submission (prevent default)
-        const form = document.querySelector('form');
-        if (form) {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Thank you for your message. We will be in touch soon.');
-                form.reset();
-            });
-        }
     </script>
 </body>
 
