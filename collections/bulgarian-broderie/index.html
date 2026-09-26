@@ -92,11 +92,14 @@
     <div id="product-detail" class="product-detail" role="dialog" aria-modal="true" aria-labelledby="detail-title"
         hidden>
         <button id="closeDetailBtn" class="close-detail" aria-label="Close details">&times;</button>
+        <button id="prevDetailBtn" class="detail-nav detail-nav-prev" aria-label="Previous look">&#8249;</button>
+        <button id="nextDetailBtn" class="detail-nav detail-nav-next" aria-label="Next look">&#8250;</button>
         <div class="detail-container">
             <div class="detail-image">
                 <img id="detail-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
             </div>
             <div class="detail-info">
+                <p id="detail-counter" class="detail-counter"></p>
                 <h2 id="detail-title" class="detail-title">Item details</h2>
                 <p id="detail-description"></p>
                 <div class="detail-specs">

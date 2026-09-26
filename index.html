@@ -76,8 +76,11 @@
    <!-- Hero Section -->
    <section class="hero">
       <div class="hero-media">
-         <img src="images/hero-poster.jpg" width="1600" height="900"
-            alt="Runway moment from the Summer 2026 show" class="hero-img" fetchpriority="high">
+         <picture>
+            <source media="(max-width: 768px)" srcset="images/hero-poster-portrait.jpg" width="720" height="1280">
+            <img src="images/hero-poster.jpg" width="1600" height="900"
+               alt="Runway moment from the Summer 2026 show" class="hero-img" fetchpriority="high">
+         </picture>
          <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
       </div>
       <div class="container">
@@ -406,16 +409,16 @@
          });
       });
 
-      // Hero film: a short muted loop, only on larger screens and when the
-      // visitor has not asked for reduced motion or data saving. Phones and
-      // everyone else keep the still photo.
+      // Hero film: a short muted loop on every screen. Phones get a portrait
+      // cut, larger screens the landscape one. Visitors who asked for reduced
+      // motion or data saving keep the still photo.
       const heroVideo = document.querySelector('.hero-video');
-      const wantsVideo = window.matchMedia('(min-width: 769px)').matches
-         && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      const wantsVideo = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
          && !(navigator.connection && navigator.connection.saveData);
       if (heroVideo && wantsVideo && heroVideo.canPlayType('video/mp4')) {
+         const portrait = window.matchMedia('(max-width: 768px)').matches;
          const source = document.createElement('source');
-         source.src = 'video/hero-loop.mp4';
+         source.src = portrait ? 'video/hero-loop-portrait.mp4' : 'video/hero-loop.mp4';
          source.type = 'video/mp4';
          heroVideo.appendChild(source);
          heroVideo.addEventListener('playing', () => heroVideo.classList.add('is-playing'), { once: true });
