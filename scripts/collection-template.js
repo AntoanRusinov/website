@@ -6,7 +6,8 @@
 //   video.youtubeId, video.title  optional; renders the embedded player
 //   imageWidth                    width of the full-size <n>.jpg files (default 1600)
 //   items[]                       id, title, description, image, material, fabric,
-//                                 craftsmanship, optional orientation: "landscape"
+//                                 craftsmanship, optional orientation: "landscape",
+//                                 optional layout: "wide" (portrait photo shown full width)
 //
 // Image files per item: <n>.jpg (full size, detail view), <n>-800.jpg (grid
 // thumbnail, 800x1200). Landscape photos also have <n>-1200.jpg, a 1200x1800
@@ -109,9 +110,24 @@ function displayCollection(data) {
 // ----- Detail dialog -----
 
 let lastFocused = null;
+let currentIndex = -1;
 
 function detailElement() {
     return document.getElementById('product-detail');
+}
+
+function itemCount() {
+    return window.collectionData ? window.collectionData.items.length : 0;
+}
+
+// Warm the browser cache for the neighbours so stepping through feels instant.
+function preloadNeighbours(index) {
+    const items = window.collectionData.items;
+    [index - 1, index + 1].forEach((i) => {
+        const item = items[(i + items.length) % items.length];
+        const img = new Image();
+        img.src = IMAGE_DIR + item.image;
+    });
 }
 
 // Fills a text element and hides its wrapper when the value is empty, so
@@ -124,13 +140,23 @@ function setField(id, value, wrapperSelector) {
     wrapper.hidden = text === '';
 }
 
-function openDetail(index) {
-    const item = window.collectionData.items[index];
+// Fills the dialog with one look. Used both when opening from the grid and
+// when stepping with the previous / next controls.
+function showItem(index) {
+    const items = window.collectionData.items;
+    currentIndex = (index + items.length) % items.length;
+    const item = items[currentIndex];
     const detail = detailElement();
 
     const img = document.getElementById('detail-img');
     img.src = IMAGE_DIR + item.image;
     img.alt = item.title;
+    // Landscape photos take the full width of the dialog with the text below;
+    // portrait photos keep the two-column layout unless the item asks for the
+    // wide presentation (layout: "wide"), used for group photos.
+    detail.classList.toggle('is-landscape', item.orientation === 'landscape');
+    detail.classList.toggle('is-wide', item.orientation === 'landscape' || item.layout === 'wide');
+    document.getElementById('detail-counter').textContent = `${currentIndex + 1} / ${items.length}`;
     document.getElementById('detail-title').textContent = item.title;
     setField('detail-description', item.description);
     setField('detail-material', item.material, '.spec-item');
@@ -138,13 +164,25 @@ function openDetail(index) {
     setField('detail-craftsmanship', item.craftsmanship, '.spec-item');
     const anySpec = [item.material, item.fabric, item.craftsmanship].some(v => (v || '').trim() !== '');
     detail.querySelector('.detail-specs').hidden = !anySpec;
+    detail.scrollTop = 0;
+    preloadNeighbours(currentIndex);
+}
 
+function openDetail(index) {
+    const detail = detailElement();
+    showItem(index);
     lastFocused = document.activeElement;
     detail.hidden = false;
     detail.classList.add('open');
-    detail.scrollTop = 0;
     document.body.style.overflow = 'hidden';
     document.getElementById('closeDetailBtn').focus();
+}
+
+function stepDetail(delta) {
+    if (detailElement().hidden || itemCount() === 0) {
+        return;
+    }
+    showItem(currentIndex + delta);
 }
 
 function closeDetail() {
@@ -186,6 +224,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const detail = detailElement();
     document.getElementById('closeDetailBtn').addEventListener('click', closeDetail);
+    document.getElementById('prevDetailBtn').addEventListener('click', () => stepDetail(-1));
+    document.getElementById('nextDetailBtn').addEventListener('click', () => stepDetail(1));
+
+    // Swipe left / right on touch screens steps through the looks.
+    let touchStartX = null;
+    let touchStartY = null;
+    detail.addEventListener('touchstart', (event) => {
+        touchStartX = event.changedTouches[0].clientX;
+        touchStartY = event.changedTouches[0].clientY;
+    }, { passive: true });
+    detail.addEventListener('touchend', (event) => {
+        if (touchStartX === null) {
+            return;
+        }
+        const dx = event.changedTouches[0].clientX - touchStartX;
+        const dy = event.changedTouches[0].clientY - touchStartY;
+        touchStartX = null;
+        touchStartY = null;
+        if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+            stepDetail(dx < 0 ? 1 : -1);
+        }
+    }, { passive: true });
 
     // Click on the dark backdrop (outside the content) closes the dialog.
     detail.addEventListener('click', (event) => {
@@ -195,9 +255,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && !detail.hidden) {
+        if (detail.hidden) {
+            return;
+        }
+        if (event.key === 'Escape') {
             event.preventDefault();
             closeDetail();
+            return;
+        }
+        if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            stepDetail(1);
+            return;
+        }
+        if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            stepDetail(-1);
             return;
         }
         trapFocus(event);

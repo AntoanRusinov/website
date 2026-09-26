@@ -38,7 +38,7 @@ images/                            Site-wide images: hero, about, og-image, favi
 styles/main.css                    Shared styles for the home page
 styles/legal.css                   Shared styles for the legal/info and 404 pages
 fonts/                             Self-hosted Montserrat + Cormorant Garamond (woff2, OFL) and fonts.css
-video/hero-loop.mp4                Short muted runway loop for the home page hero (desktop only)
+video/                             Muted runway loops for the home page hero (landscape + portrait)
 styles/collection-template.css     Styles for collection pages
 scripts/collection-template.js     Builds a collection page from its data.json
 ```
@@ -49,8 +49,9 @@ Edit the relevant `collections/<name>/data.json`. Top level: `title`, `descripti
 `video` (`youtubeId`, `title`) which renders the embedded player only when present, and
 `imageWidth` (pixel width of the full-size photos). Each item needs `id`, `title`, `image`
 (filename inside that folder's `images/`) and may carry `description`, `material`, `fabric`,
-`craftsmanship` (empty values are hidden in the detail view) and `orientation: "landscape"`
-for photos that are wider than tall.
+`craftsmanship` (empty values are hidden in the detail view), `orientation: "landscape"`
+for photos that are wider than tall, and `layout: "wide"` to show a portrait photo across the full
+width of the detail view (group photos).
 
 To add a collection, copy an existing `collections/<name>/` folder, replace `data.json` and
 `images/`, adjust the `<title>`, meta tags and `<h1>` in its `index.html`, and add the link to
@@ -83,10 +84,11 @@ Both font families are served from `fonts/` (latin subset, SIL Open Font License
 request leaves the site. `fonts/fonts.css` holds the `@font-face` rules; every page links it before
 its own stylesheet.
 
-The home page hero shows `images/hero-poster.jpg` and, on screens wider than 768px without
-reduced-motion or data-saver preferences, fades in `video/hero-loop.mp4` (about 18 seconds, muted,
-looping, H.264 720p). To replace the loop, cut a new clip with ffmpeg, keep it under ~4 MB, export
-its first frame as the poster, and keep the file names.
+The home page hero shows a still (`images/hero-poster.jpg`, or `images/hero-poster-portrait.jpg`
+up to 768px) and, unless the visitor prefers reduced motion or data saving, fades in a muted 18
+second loop: `video/hero-loop.mp4` (1280x720) on larger screens, `video/hero-loop-portrait.mp4`
+(540x960, a centre crop of the same passages) on phones. To replace the loop, cut both versions with
+ffmpeg, keep each under ~4 MB, export the first frame of each as its poster, and keep the file names.
 
 ## Third-party assets
 
