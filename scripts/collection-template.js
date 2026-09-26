@@ -150,6 +150,9 @@ function showItem(index) {
     const img = document.getElementById('detail-img');
     img.src = IMAGE_DIR + item.image;
     img.alt = item.title;
+    // Landscape photos take the full width of the dialog with the text below;
+    // portrait photos keep the two-column layout.
+    detail.classList.toggle('is-landscape', item.orientation === 'landscape');
     document.getElementById('detail-counter').textContent = `${currentIndex + 1} / ${items.length}`;
     document.getElementById('detail-title').textContent = item.title;
     setField('detail-description', item.description);
