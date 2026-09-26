@@ -580,6 +580,20 @@ button:focus-visible {
     aspect-ratio: 3 / 2;
 }
 
+/* A portrait photo shown wide gets the same 3:2 box as a landscape one and
+   sits centred inside it at the box height */
+.product-detail.is-wide:not(.is-landscape) .detail-image {
+    aspect-ratio: 3 / 2;
+    width: 100%;
+}
+
+.product-detail.is-wide:not(.is-landscape) .detail-image img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
 .product-detail.is-wide .detail-info {
     max-width: 800px;
 }
@@ -641,6 +655,13 @@ button:focus-visible {
         height: auto;
         margin: 0 -16px;
         /* edge to edge on phones so wide photos get every pixel of width */
+    }
+
+    /* on phones a 3:2 box is too short for a portrait photo: use the usual height */
+    .product-detail.is-wide:not(.is-landscape) .detail-image {
+        aspect-ratio: auto;
+        height: 62vh;
+        margin: 0;
     }
 
     .detail-nav {
