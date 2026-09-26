@@ -43,14 +43,23 @@ scripts/collection-template.js     Builds a collection page from its data.json
 
 ## Adding / editing collection content
 
-Edit the relevant `collections/<name>/data.json`. Each item needs:
-`id`, `title`, `description`, `image` (filename inside that folder's `images/`),
-`material`, `fabric`, `craftsmanship`.
+Edit the relevant `collections/<name>/data.json`. Top level: `title`, `description`, optional
+`video` (`youtubeId`, `title`) which renders the embedded player only when present, and
+`imageWidth` (pixel width of the full-size photos). Each item needs `id`, `title`, `image`
+(filename inside that folder's `images/`) and may carry `description`, `material`, `fabric`,
+`craftsmanship` (empty values are hidden in the detail view) and `orientation: "landscape"`
+for photos that are wider than tall.
+
+To add a collection, copy an existing `collections/<name>/` folder, replace `data.json` and
+`images/`, adjust the `<title>`, meta tags and `<h1>` in its `index.html`, and add the link to
+the Collections menus (desktop, mobile, footer) on every page plus an entry in `sitemap.xml`.
 
 ## Images
 
-Every collection photo exists in two sizes: `<n>.jpg` at 1600px wide (detail view) and
-`<n>-800.jpg` at 800px wide (grid thumbnails). When adding a photo, export both from the
+Every collection photo exists in two sizes: `<n>.jpg` full size for the detail view (1600px wide
+in Bulgarian broderie, 1400px in Summer 2026, recorded as `imageWidth` in `data.json`) and
+`<n>-800.jpg` at 800x1200 for the grid. Landscape photos get an extra `<n>-1200.jpg` centre crop
+at 1200x1800 because the grid frame is 2:3. When adding a photo, export both from the
 original, JPEG quality around 80, and strip camera metadata. Oversized camera-original files
 bloat load times with no visible benefit. A quick way to produce both from an original:
 

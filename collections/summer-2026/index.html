@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer 2026 | IVANKA RAYKOVA</title>
+    <meta name="description"
+        content="Summer 2026 — the new collection by Ivanka Raykova, shown on the catwalk on 15 August 2026. Handcrafted, made-to-order pieces with traditional Bulgarian embroidery.">
+    <link rel="canonical" href="https://ivankaraykova.com/collections/summer-2026/">
+    <link rel="icon" href="../../images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Summer 2026 | IVANKA RAYKOVA">
+    <meta property="og:description"
+        content="The Summer 2026 collection: light, made-to-order pieces with traditional Bulgarian embroidery.">
+    <meta property="og:url" content="https://ivankaraykova.com/collections/summer-2026/">
+    <meta property="og:image" content="https://ivankaraykova.com/images/og-image-summer-2026.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Summer 2026 | IVANKA RAYKOVA">
+    <meta name="twitter:description"
+        content="The Summer 2026 collection: light, made-to-order pieces with traditional Bulgarian embroidery.">
+    <meta name="twitter:image" content="https://ivankaraykova.com/images/og-image-summer-2026.jpg">
+    <link rel="stylesheet" href="../../styles/collection-template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../../index.html" class="logo">IVANKA RAYKOVA</a>
+                <!-- Desktop Navigation -->
+                <nav>
+                    <ul class="nav-desktop">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Collections</a>
+                            <div class="dropdown-content">
+                                <a href="../bulgarian-broderie/">Bulgarian broderie</a>
+                                <a href="../summer-2026/">Summer 2026</a>
+                                <!-- <a href="">Winter 2024</a> -->
+                            </div>
+                        </li>
+                        <li><a href="../../index.html#about">About</a></li>
+                        <li><a href="../../index.html#atelier">Atelier Services</a></li>
+                        <li><a href="../../index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" aria-label="Open navigation menu" aria-expanded="false"
+                    aria-controls="mobile-nav">≡</button>
+                <div class="mobile-nav" id="mobile-nav">
+                    <ul>
+                        <li class="dropdown-mobile">
+                            <a href="#">Collections</a>
+                            <ul class="mobile-submenu">
+                                <li><a href="../bulgarian-broderie/">Bulgarian broderie</a></li>
+                                <li><a href="../summer-2026/">Summer 2026</a></li>
+                                <!-- <li><a href="">Winter 2024</a></li> -->
+                            </ul>
+                        </li>
+                        <li><a href="../../index.html#about">About</a></li>
+                        <li><a href="../../index.html#atelier">Atelier Services</a></li>
+                        <li><a href="../../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Collection Content -->
+    <main>
+        <div class="container">
+            <h1 id="collection-title" class="section-title">Summer 2026</h1>
+
+            <!-- Video: filled from data.json when the collection has one -->
+            <div id="collection-video" class="collection-video" hidden></div>
+
+            <p id="collection-description" class="collection-description"></p>
+            <div id="collection-grid" class="collection-grid"></div>
+        </div>
+    </main>
+
+    <!-- Product Detail Modal -->
+    <div id="product-detail" class="product-detail" role="dialog" aria-modal="true" aria-labelledby="detail-title"
+        hidden>
+        <button id="closeDetailBtn" class="close-detail" aria-label="Close details">&times;</button>
+        <div class="detail-container">
+            <div class="detail-image">
+                <img id="detail-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+            </div>
+            <div class="detail-info">
+                <h2 id="detail-title" class="detail-title">Item details</h2>
+                <p id="detail-description"></p>
+                <div class="detail-specs">
+                    <div class="spec-item">
+                        <h3>Material</h3>
+                        <p id="detail-material"></p>
+                    </div>
+                    <div class="spec-item">
+                        <h3>Fabric</h3>
+                        <p id="detail-fabric"></p>
+                    </div>
+                    <div class="spec-item">
+                        <h3>Craftsmanship</h3>
+                        <p id="detail-craftsmanship"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <span class="contact-label">EMAIL</span>
+                    <a href="mailto:ivanka.raykova@yahoo.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        ivanka.raykova@yahoo.com
+                    </a>
+                </div>
+                <div class="contact-divider"></div>
+                <div class="contact-item">
+                    <span class="contact-label">PHONE</span>
+                    <div class="phone-links">
+                        <a href="tel:+34602491270" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            +34602491270
+                        </a>
+                        <a href="tel:+359877647641" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            +359877647641
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">IVANKA RAYKOVA</div>
+                    <p>Contemporary fashion design celebrating cultural heritage through traditional embroidery and
+                        modern silhouettes.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/ivanka.atelier/" class="social-link" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Bulgaritasdesign" class="social-link" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@ivanka.atelier" class="social-link" target="_blank" rel="noopener noreferrer"
+                            aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Navigation</h3>
+                    <ul class="footer-nav">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#about">About</a></li>
+                        <li><a href="../../index.html#atelier">Atelier Services</a></li>
+                        <li><a href="../../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Collections</h3>
+                    <ul class="footer-nav">
+                        <li><a href="../bulgarian-broderie/">Bulgarian broderie</a></li>
+                        <li><a href="../summer-2026/">Summer 2026</a></li>
+                        <!-- <li><a href="">Winter 2024</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Information</h3>
+                    <ul class="footer-nav">
+                        <li><a href="../../sustainability.html" target="_blank" rel="noopener noreferrer">Sustainability</a></li>
+                        <li><a href="../../privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                        <li><a href="../../terms-and-conditions.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 IVANKA RAYKOVA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../scripts/collection-template.js"></script>
+    <script>
+        // Mobile Navigation (same behavior as the homepage)
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        if (mobileNavToggle && mobileNav) {
+            mobileNavToggle.addEventListener('click', () => {
+                const isOpen = mobileNav.classList.toggle('active');
+                mobileNavToggle.textContent = isOpen ? '×' : '≡';
+                mobileNavToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                mobileNavToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+            });
+        }
+
+        // Mobile dropdown submenu - prevent the whole menu from closing
+        const mobileDropdownToggle = document.querySelector('.dropdown-mobile > a');
+        const mobileSubmenu = document.querySelector('.mobile-submenu');
+
+        if (mobileDropdownToggle && mobileSubmenu) {
+            mobileDropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                mobileSubmenu.classList.toggle('active');
+                mobileDropdownToggle.textContent = mobileSubmenu.classList.contains('active')
+                    ? 'Collections -'
+                    : 'Collections +';
+            });
+        }
+
+        // Close mobile nav when clicking a link (except the dropdown toggle)
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a:not(.dropdown-mobile > a)');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                mobileNavToggle.textContent = '≡';
+                mobileNavToggle.setAttribute('aria-expanded', 'false');
+                mobileNavToggle.setAttribute('aria-label', 'Open navigation menu');
+            });
+        });
+    </script>
+</body>
+
+</html>

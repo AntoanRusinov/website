@@ -260,6 +260,11 @@
          transform: scale(1.03);
       }
 
+      /* Second collection block on the home page sits closer to the first */
+      .collections-secondary {
+         padding-top: 0;
+      }
+
       /* Home page preview: one look on phones, the full row on larger screens */
       @media screen and (max-width: 768px) {
          .home-collection {

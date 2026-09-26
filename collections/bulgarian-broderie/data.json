@@ -1,6 +1,11 @@
 {
   "title": "Bulgarian Broderie",
   "description": "This collection celebrates traditional Bulgarian embroidery techniques reimagined in contemporary silhouettes. Each piece features handcrafted details that honor our cultural heritage while embracing modern design aesthetics.",
+  "video": {
+    "youtubeId": "IGnrsP5Ec30",
+    "title": "Bulgarian Broderie collection runway video"
+  },
+  "imageWidth": 1600,
   "items": [
     {
       "id": "bb001",

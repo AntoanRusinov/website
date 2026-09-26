@@ -1,0 +1,626 @@
+{
+  "title": "Summer 2026",
+  "description": "The Summer 2026 collection, presented on the catwalk on 15 August 2026. Light, made-to-order pieces that carry traditional Bulgarian embroidery into a summer wardrobe.",
+  "video": {
+    "youtubeId": "22dlosVHQaw",
+    "title": "Summer 2026 collection runway video"
+  },
+  "imageWidth": 1400,
+  "items": [
+    {
+      "id": "s26-001",
+      "title": "Opening",
+      "description": "The empty catwalk before the first look, with the collection title on the LED wall over a sunset seascape.",
+      "image": "1.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": "",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-002",
+      "title": "White Linen Shirt with Sheer Organza Sleeves and Shorts",
+      "description": "A two-piece menswear set in white: a relaxed button-through shirt whose body is opaque linen while the full-length sleeves are cut in transparent organza, finished with linen cuffs and a pointed collar. It is paired with mid-thigh linen shorts with a soft, unpressed front and worn with sand-coloured suede loafers.",
+      "image": "2.jpg",
+      "material": "Linen-look weave with sheer organza sleeves",
+      "fabric": "The linen is light and matt with a soft, slightly creased hand, while the organza sleeves are crisp and glassy and catch the stage light.",
+      "craftsmanship": "The organza sleeves are set into a linen body and closed with linen cuffs, so the sheer panels are framed by opaque fabric at the shoulder, cuff and placket; the shorts show a clean, unfussy waistband."
+    },
+    {
+      "id": "s26-003",
+      "title": "Linen Shirt with Transparent Sleeves and Linen Shorts",
+      "description": "The same white linen set seen closer: a loose shirt with a small collar, front button placket and see-through organza sleeves that end in solid linen cuffs. The shorts sit at the natural waist and fall straight to mid-thigh, worn with suede loafers.",
+      "image": "3.jpg",
+      "material": "Linen-look weave with sheer organza sleeves",
+      "fabric": "A lightweight, breathable linen with a dry, matt surface, contrasted with the smooth, translucent sheen of the organza.",
+      "craftsmanship": "Sheer sleeves joined to an opaque body with a clean seam at the shoulder, linen cuffs with button closure, and a neat button placket down the front."
+    },
+    {
+      "id": "s26-004",
+      "title": "White Linen Shirt and Shorts",
+      "description": "The white linen shirt and shorts set shown from the end of the runway, with the sheer organza sleeves reading almost invisible against the arms. The shorts have side pockets and the shirt hangs untucked to the hip, finished with suede loafers.",
+      "image": "4.jpg",
+      "material": "Linen-look weave with sheer organza sleeves",
+      "fabric": "Light, airy linen with a relaxed drape, paired with fine organza that adds shine without weight.",
+      "craftsmanship": "Contrast sleeve construction in organza on a linen body, with self-fabric cuffs and collar and a button-through front."
+    },
+    {
+      "id": "s26-005",
+      "title": "Linen Shirt with Organza Sleeves",
+      "description": "A front-on view of the white linen shirt with transparent organza sleeves, showing the small pointed collar, the button placket and the linen cuffs. The matching white linen shorts fall loosely to mid-thigh and the look is completed with sand suede loafers.",
+      "image": "5.jpg",
+      "material": "Linen-look weave with sheer organza sleeves",
+      "fabric": "The linen is fine and matt with gentle creasing; the organza is stiff, sheer and glossy.",
+      "craftsmanship": "Sheer sleeves set into an opaque linen body, with linen collar, placket and cuffs framing the transparent panels."
+    },
+    {
+      "id": "s26-006",
+      "title": "Ivory Satin Bikini with Crystal Trim and Halter Cape",
+      "description": "A swim look in pale ivory: a triangle bikini top and tie-side briefs, each edged with a row of clear crystal beads, worn under a floor-length satin cape that fastens at the neck with a halter band and jewelled clasp. The cape is open at the front and floats behind the look, with a fabric rose at the wrist and nude court shoes.",
+      "image": "6.jpg",
+      "material": "Satin-finish woven cape, likely silk or polyester, over a stretch swim fabric",
+      "fabric": "The cape is a fluid, lustrous satin that catches the light and moves freely; the bikini is a smooth, matt stretch fabric.",
+      "craftsmanship": "Hand-applied crystal beading along the bikini top band and brief waist, a jewelled clasp at the halter neck, and a fabric rose worn at the wrist."
+    },
+    {
+      "id": "s26-007",
+      "title": "Halter-Neck Satin Cape over Beaded Ivory Bikini",
+      "description": "The ivory satin cape and bikini set seen as the cape lifts, showing its full length and the open front. The bikini top and briefs carry a line of crystal beads along their edges, and the cape gathers into a halter band closed by a jewelled brooch at the throat.",
+      "image": "7.jpg",
+      "material": "Satin-finish woven cape, likely silk or polyester, over a stretch swim fabric",
+      "fabric": "A light, glossy satin with a liquid drape and a soft, smooth stretch fabric for the swimwear.",
+      "craftsmanship": "Crystal bead trim on the bikini, a gathered halter neckline fixed with a decorative clasp, and a fabric rose at the wrist."
+    },
+    {
+      "id": "s26-008",
+      "title": "Ivory Satin Cape and Crystal-Edged Bikini",
+      "description": "The ivory satin cape and bikini set from the front, with the cape falling straight from a gathered halter neck and the crystal-edged triangle top and tie-side briefs visible underneath. A fabric rose sits at the wrist and the look is finished with nude pointed shoes.",
+      "image": "8.jpg",
+      "material": "Satin-finish woven cape, likely silk or polyester, over a stretch swim fabric",
+      "fabric": "Smooth, lustrous satin with a fluid fall, over a matt stretch swim fabric.",
+      "craftsmanship": "Beaded crystal edging on both bikini pieces, a jewelled clasp at the halter neck and a fabric rose worn on the wrist."
+    },
+    {
+      "id": "s26-009",
+      "title": "Satin Halter Cape with Beaded Bikini, Standing View",
+      "description": "The ivory satin cape at rest, pooling slightly on the floor behind, with the crystal-trimmed triangle top and briefs framed by the open front. The halter band is closed with a jewelled clasp and the look is worn with nude court shoes.",
+      "image": "9.jpg",
+      "material": "Satin-finish woven cape, likely silk or polyester, over a stretch swim fabric",
+      "fabric": "A light satin with a high sheen and a soft, flowing drape that falls into loose folds when still.",
+      "craftsmanship": "Crystal bead trim on the bikini top band and brief waist, and a gathered halter neckline fixed with a decorative clasp."
+    },
+    {
+      "id": "s26-010",
+      "title": "Ivory Satin Halter Cape in Profile",
+      "description": "A side view of the ivory satin cape, showing how it hangs from the halter neck in a straight column and trails to the floor at the back while the front is open. The bikini top and a hint of the beaded trim show beneath, with nude kitten-heel shoes.",
+      "image": "10.jpg",
+      "material": "Satin-finish woven cape, likely silk or polyester, over a stretch swim fabric",
+      "fabric": "A fluid satin with a soft lustre that falls in long, unbroken folds.",
+      "craftsmanship": "Gathered halter neckline and a clean hem that sweeps into a short train at the back; crystal beading on the swimwear underneath."
+    },
+    {
+      "id": "s26-011",
+      "title": "White Swimsuit with Sheer Organza Puff-Sleeve Cover-Up",
+      "description": "A white strapless one-piece swimsuit with a fine corded belt at the waist, layered under a short, open cover-up in transparent white organza. The cover-up has voluminous elbow-length puff sleeves with beaded fringe across the shoulders, a small jewelled button at the neck, and it is worn with nude court shoes.",
+      "image": "11.jpg",
+      "material": "Sheer organza cover-up over a stretch swim fabric",
+      "fabric": "The organza is crisp and translucent with a pearly sheen and holds the puffed sleeve shape; the swimsuit is a smooth, matt stretch fabric.",
+      "craftsmanship": "Rows of beaded fringe stitched over the shoulders and upper sleeves, gathered puff sleeves with narrow cuffs, a single jewelled button closure and a corded belt on the swimsuit."
+    },
+    {
+      "id": "s26-012",
+      "title": "Organza Cover-Up with Beaded Shoulders over White One-Piece",
+      "description": "A close view of the sheer white organza cover-up, showing the beaded fringe draped in loops across the shoulders and the gathered puff sleeves finished with narrow cuffs. Beneath it is a white strapless one-piece with a twisted cord belt, and the cover-up closes with a single jewelled button at the collar.",
+      "image": "12.jpg",
+      "material": "Sheer organza cover-up over a stretch swim fabric",
+      "fabric": "Light, glossy organza that stands away from the body and lets the swimsuit show through; the swimsuit is smooth and opaque.",
+      "craftsmanship": "Hand-applied beaded fringe in swags over the shoulders, gathered sleeve heads and cuffs, a jewelled button at the neck and a twisted cord belt."
+    },
+    {
+      "id": "s26-013",
+      "title": "White One-Piece and Sheer Organza Jacket",
+      "description": "The white strapless swimsuit and organza puff-sleeve cover-up seen from the end of the runway, with the cover-up open down the front and ending at the hip. The corded belt marks the waist and the look is worn with nude court shoes.",
+      "image": "13.jpg",
+      "material": "Sheer organza cover-up over a stretch swim fabric",
+      "fabric": "Crisp, translucent organza with a soft sheen over a smooth opaque swim fabric.",
+      "craftsmanship": "Beaded fringe across the shoulders, gathered puff sleeves, a single button closure at the neck and a corded belt."
+    },
+    {
+      "id": "s26-014",
+      "title": "Sheer Puff-Sleeve Cover-Up and White Swimsuit",
+      "description": "A three-quarter view of the sheer organza cover-up, showing the volume of the puff sleeves and the beaded fringe at the shoulder. The cover-up has small tie fastenings at the hip and is worn open over the white strapless one-piece with its corded belt, finished with nude kitten heels.",
+      "image": "14.jpg",
+      "material": "Sheer organza cover-up over a stretch swim fabric",
+      "fabric": "Light, crisp organza with a pearly sheen that holds shape in the sleeves and floats at the hem.",
+      "craftsmanship": "Beaded fringe over the shoulders, gathered and cuffed puff sleeves, a jewelled neck button and narrow ties at the side seams."
+    },
+    {
+      "id": "s26-015",
+      "title": "White Strapless Swimsuit with Organza Cover-Up",
+      "description": "The white strapless one-piece and sheer organza cover-up from the front, the cover-up falling open to reveal the corded belt at the waist. The puff sleeves are edged with beaded fringe at the shoulder and the look ends in nude pointed shoes.",
+      "image": "15.jpg",
+      "material": "Sheer organza cover-up over a stretch swim fabric",
+      "fabric": "Glassy, lightweight organza over a smooth, matt swim fabric.",
+      "craftsmanship": "Beaded fringe stitched across the shoulders, gathered puff sleeves with cuffs, a single jewelled button and a corded belt."
+    },
+    {
+      "id": "s26-016",
+      "title": "Gold Triangle Bikini Top with Feather-Trimmed White Wrap Skirt",
+      "description": "A swim look pairing a metallic gold triangle bikini top with a short white wrap skirt that ties at the hip and is edged along its diagonal hem with pale feather trim. Gold cord ties and a gold bracelet pick up the top, and the look is worn with black ankle-strap heels.",
+      "image": "16.jpg",
+      "material": "Metallic stretch swim fabric with a woven wrap skirt and feather trim",
+      "fabric": "The top is a smooth, light-reflecting metallic fabric; the skirt is a light, matt weave with a soft, feathery edge.",
+      "craftsmanship": "Feather trim hand-applied along the wrap hem and cord ties with gold tips at the waist and neck."
+    },
+    {
+      "id": "s26-017",
+      "title": "Gold Bikini Top and Feathered Wrap Skirt",
+      "description": "The gold triangle bikini top and white wrap skirt seen from the end of the runway, with the feather trim along the skirt's hem and the tie at the hip clearly visible. Gold cord ties and black ankle-strap heels complete the look.",
+      "image": "17.jpg",
+      "material": "Metallic stretch swim fabric with a woven wrap skirt and feather trim",
+      "fabric": "A smooth metallic swim fabric with a light woven skirt finished in soft feathers.",
+      "craftsmanship": "Feather trim along the diagonal hem of the wrap skirt and gold-tipped cord ties at the hip and neck."
+    },
+    {
+      "id": "s26-018",
+      "title": "Gold Bikini Top with Feather-Trimmed Wrap Skirt",
+      "description": "A two-piece beach set: a metallic gold triangle bikini top paired with a short white wrap skirt finished with a fringe of white feathers along the curved hem. The skirt closes on the hips with gold cord ties, and a matching gold scrunchie on the wrist echoes the metallic top. Black strappy heels complete the look.",
+      "image": "18.jpg",
+      "material": "Metallic shimmer swim fabric for the top; satin-look white weave with marabou-style feather trim for the skirt",
+      "fabric": "The top is a stretch swim fabric with a fine metallic sheen, while the skirt is a smooth, lightly lustrous fabric that holds a clean wrap line and ends in a soft, airy feather fringe.",
+      "craftsmanship": "The feather trim is applied along the full curved hem of the wrap skirt, and the closure is worked with twisted gold cord ties knotted at both hips."
+    },
+    {
+      "id": "s26-019",
+      "title": "Metallic Gold Bikini and White Feather Wrap Skirt",
+      "description": "The same beach set seen from the front: a metallic gold triangle bikini top and a white asymmetric wrap mini skirt edged with white feathers. Gold cord ties sit on either hip and the front panel overlaps to reveal the feathered under-edge. A gold scrunchie on the wrist and black pointed heels finish the look.",
+      "image": "19.jpg",
+      "material": "Metallic shimmer swim fabric for the top; satin-look white weave with feather trim for the skirt",
+      "fabric": "The top has a fine, glittering metallic surface; the skirt is a smooth, medium-light fabric with a soft sheen that drapes cleanly, softened by a fringe of feathers.",
+      "craftsmanship": "Feather trim runs the length of the diagonal hem, and the skirt is held by hand-tied twisted gold cords at the hips."
+    },
+    {
+      "id": "s26-020",
+      "title": "Gold Triangle Bikini Top with Feathered Satin Wrap",
+      "description": "A close view of the gold and white beach set: a metallic gold triangle bikini top with a thin neck tie, and a white satin-look wrap skirt cut on a diagonal with a dense feather fringe at the hem. Twisted gold cord ties knot at each hip, and a gold scrunchie is worn on the wrist.",
+      "image": "20.jpg",
+      "material": "Metallic shimmer swim fabric for the top; satin-look white weave with feather trim for the skirt",
+      "fabric": "The bikini fabric has a fine glittering metallic finish, while the skirt is a smooth, lightly lustrous fabric that lies flat and ends in a soft, wispy feather border.",
+      "craftsmanship": "Feathers are set along the entire hem edge of the wrap, and the twisted gold cords are hand-knotted at the hips in place of a fastening."
+    },
+    {
+      "id": "s26-021",
+      "title": "Gold Bikini Top and White Feather-Hem Wrap Skirt",
+      "description": "A three-quarter view of the gold and white beach look: a metallic gold triangle bikini top and a short white wrap skirt with a feather fringe along its diagonal hem. Gold cord ties are knotted on each hip and a gold scrunchie sits on the wrist.",
+      "image": "21.jpg",
+      "material": "Metallic shimmer swim fabric for the top; satin-look white weave with feather trim for the skirt",
+      "fabric": "The top has a fine glittering metallic finish; the skirt is a smooth, lightly lustrous fabric with a soft, light feather border that moves with each step.",
+      "craftsmanship": "The feather trim follows the full length of the wrap hem, and twisted gold cords are hand-tied at both hips as the closure."
+    },
+    {
+      "id": "s26-022",
+      "title": "Metallic Gold Bikini Top with Feathered Wrap Skirt",
+      "description": "The gold and white beach set walking: a metallic gold triangle bikini top with a white asymmetric wrap skirt finished with a feather fringe. Gold cord ties are knotted at the hips, and black strappy pointed heels complete the look.",
+      "image": "22.jpg",
+      "material": "Metallic shimmer swim fabric for the top; satin-look white weave with feather trim for the skirt",
+      "fabric": "The top is a stretch swim fabric with a fine metallic sheen; the skirt is a smooth, lightly lustrous fabric that keeps a crisp wrap line, edged with soft feathers.",
+      "craftsmanship": "Feather trim is applied along the curved hem of the wrap, and the closure is worked with twisted gold cord ties at each hip."
+    },
+    {
+      "id": "s26-023",
+      "title": "Gold Bikini Top with White Feather Wrap Skirt",
+      "description": "A front view of the gold and white beach set: a metallic gold triangle bikini top and a white wrap mini skirt with a feather-fringed diagonal hem. Gold cord ties sit on the hips, a gold scrunchie is worn on the wrist, and black strappy heels finish the look.",
+      "image": "23.jpg",
+      "material": "Metallic shimmer swim fabric for the top; satin-look white weave with feather trim for the skirt",
+      "fabric": "The top has a fine glittering metallic surface, while the skirt is a smooth, medium-light fabric with a soft sheen and an airy feather border.",
+      "craftsmanship": "Feathers are set along the entire wrap hem, and twisted gold cords are hand-knotted at the hips in place of a fastening."
+    },
+    {
+      "id": "s26-024",
+      "title": "Sheer Organza Cape over Gold Belted Swimsuit",
+      "description": "A metallic gold strapless one-piece swimsuit with a high-cut leg and a slim self-fabric belt with a dark square buckle, worn under a sheer white organza cape. The cape has a small stand collar, wide gathered sleeves and a deep ruffle along the hem that flares out with movement. Nude pointed heels complete the look.",
+      "image": "24.jpg",
+      "material": "Metallic shimmer swim fabric for the one-piece; sheer organza for the cape",
+      "fabric": "The swimsuit has a fine metallic sheen and a smooth stretch surface, while the organza is crisp, transparent and light enough to float away from the body.",
+      "craftsmanship": "The cape is finished with a full gathered ruffle at the hem and a small ruffled stand collar, and the swimsuit carries a belt loop and fabric belt at the waist."
+    },
+    {
+      "id": "s26-025",
+      "title": "Gold Strapless Swimsuit with Ruffled Organza Jacket",
+      "description": "The gold and white look seen from the front: a metallic gold strapless one-piece swimsuit with a self-fabric belt, worn open under a sheer white organza jacket. The jacket has a ruffled stand collar, balloon sleeves gathered into frilled cuffs and a wide ruffle around the hem. Nude pointed heels finish the look.",
+      "image": "25.jpg",
+      "material": "Metallic shimmer swim fabric for the one-piece; sheer organza for the jacket",
+      "fabric": "The swimsuit is a smooth stretch fabric with a fine metallic finish; the organza is crisp and fully transparent, holding volume in the sleeves and ruffles.",
+      "craftsmanship": "Ruffles are worked at the collar, the cuffs and the full hem of the jacket, and the swimsuit is belted with a matching fabric belt through a loop at the waist."
+    },
+    {
+      "id": "s26-026",
+      "title": "Belted Gold Swimsuit under Sheer Organza Cover-Up",
+      "description": "A full-length view of the gold and white look: a metallic gold strapless one-piece with a high-cut leg and a slim belt with a dark buckle, layered under a sheer white organza cover-up. The cover-up has a small ruffled collar, gathered balloon sleeves with frilled cuffs and a deep ruffle at the hem. Nude pointed heels complete the look.",
+      "image": "26.jpg",
+      "material": "Metallic shimmer swim fabric for the one-piece; sheer organza for the cover-up",
+      "fabric": "The swimsuit has a smooth, fine metallic sheen, while the organza is light, crisp and transparent, standing away from the body at the sleeves and hem.",
+      "craftsmanship": "Gathered ruffles finish the collar, cuffs and hem of the cover-up, and the swimsuit is belted at the waist with a self-fabric belt and square buckle."
+    },
+    {
+      "id": "s26-027",
+      "title": "Black Rosette Bikini with Sheer Champagne Duster",
+      "description": "A black bandeau bikini with a fabric rosette at the centre of the top and tie-side bottoms finished with small rosettes, worn under a long sheer champagne organza duster. The duster falls to the knee and has gathered, ruched sleeves. Black pointed pumps complete the look.",
+      "image": "27.jpg",
+      "material": "Smooth swim fabric for the bikini; sheer organza for the duster",
+      "fabric": "The bikini is a smooth matte stretch fabric, while the duster is a light, transparent organza with a soft sheen that drifts open as it moves.",
+      "craftsmanship": "Hand-made fabric rosettes are set at the centre of the bandeau and on the hip ties, and the duster sleeves are gathered along their length."
+    },
+    {
+      "id": "s26-028",
+      "title": "Black Bandeau Bikini and Champagne Organza Duster",
+      "description": "The black and champagne look seen from the front: a black bandeau bikini top with a central rosette and tie-side bottoms with rosette details, layered under a sheer champagne organza duster. The duster has ruched sleeves gathered to the elbow and an open front. Black pointed pumps finish the look.",
+      "image": "28.jpg",
+      "material": "Smooth swim fabric for the bikini; sheer organza for the duster",
+      "fabric": "The bikini fabric is smooth and matte with a slight stretch; the organza is light and transparent, with a warm sheen that catches the light.",
+      "craftsmanship": "Fabric rosettes are applied to the bikini top and to the ties on each hip, and the duster sleeves are ruched with gathered, decorated cuffs."
+    },
+    {
+      "id": "s26-029",
+      "title": "Rosette Bikini under Sheer Champagne Organza Coat",
+      "description": "A black bandeau bikini with a rosette at the centre and tie-side bottoms with rosette accents, worn under a knee-length sheer champagne organza coat. The coat is open at the front with sleeves gathered into soft ruching. Black pointed pumps complete the look.",
+      "image": "29.jpg",
+      "material": "Smooth swim fabric for the bikini; sheer organza for the coat",
+      "fabric": "The bikini is a smooth matte stretch fabric, while the organza is light, crisp and transparent with a soft golden sheen.",
+      "craftsmanship": "Hand-made fabric rosettes decorate the bandeau top and the hip ties, and the coat sleeves are gathered along their length with embellished cuffs."
+    },
+    {
+      "id": "s26-030",
+      "title": "Black Rosette Bikini with Ruched Organza Duster",
+      "description": "A close view of the black and champagne look: a black bandeau bikini top with a fabric rosette at the centre and tie-side bottoms with rosettes on the ties, under a sheer champagne organza duster. The duster sleeves are ruched along their length and finished with cuffs carrying fine gold beaded detail.",
+      "image": "30.jpg",
+      "material": "Smooth swim fabric for the bikini; sheer organza with beaded cuffs for the duster",
+      "fabric": "The bikini fabric is smooth and matte with a slight stretch; the organza is transparent and light with a warm sheen, and holds the gathered volume of the sleeves.",
+      "craftsmanship": "Fabric rosettes are sewn to the bandeau and to both hip ties, the duster sleeves are hand-gathered into ruching, and the cuffs are finished with small gold beads."
+    },
+    {
+      "id": "s26-031",
+      "title": "Black Bandeau Bikini with Sheer Champagne Duster",
+      "description": "The black and champagne look at the end of the runway: a black bandeau bikini with a central rosette and tie-side bottoms, layered under a long sheer champagne organza duster with ruched sleeves. Black pointed pumps complete the look.",
+      "image": "31.jpg",
+      "material": "Smooth swim fabric for the bikini; sheer organza for the duster",
+      "fabric": "The bikini is a smooth matte stretch fabric, and the duster is a light, transparent organza with a soft sheen that floats as it moves.",
+      "craftsmanship": "Fabric rosettes are applied to the bikini top and hip ties, and the duster sleeves are gathered along their length."
+    },
+    {
+      "id": "s26-032",
+      "title": "Sheer Champagne Duster over Black Rosette Bikini",
+      "description": "The black and champagne look turning on the runway: a black bandeau bikini with rosette details and tie-side bottoms, under a knee-length sheer champagne organza duster with ruched sleeves. The duster lifts and floats open at the back as it turns. Black pointed pumps finish the look.",
+      "image": "32.jpg",
+      "material": "Smooth swim fabric for the bikini; sheer organza for the duster",
+      "fabric": "The bikini fabric is smooth and matte, while the organza is light and transparent with a warm sheen that catches the light in movement.",
+      "craftsmanship": "Fabric rosettes trim the bikini top and hip ties, and the duster sleeves are hand-gathered into ruching."
+    },
+    {
+      "id": "s26-033",
+      "title": "Black Satin Robe with Feather Hem over Zebra Bikini",
+      "description": "A zebra-print bikini with black strappy harness detail and ring hardware at the waist, worn under a long black satin-look robe. The robe has a gathered neckline with a small collar and clasp, full balloon sleeves gathered into cuffs, an open front and a black feather fringe along the hem. Black pointed pumps complete the look.",
+      "image": "33.jpg",
+      "material": "Satin-look weave with feather trim for the robe; printed swim fabric for the bikini",
+      "fabric": "The robe is a smooth, fluid fabric with a high sheen that falls in soft folds, edged with a light feather fringe; the bikini is a smooth printed stretch fabric.",
+      "craftsmanship": "Black feathers are applied along the full hem of the robe, the neckline and cuffs are gathered, and the bikini is detailed with strapping and ring hardware at the waist."
+    },
+    {
+      "id": "s26-034",
+      "title": "Feathered Black Satin Robe and Zebra-Print Bikini",
+      "description": "The black look seen from the front: a zebra-print bikini with black strap and ring hardware at the waist, under a long black satin-look robe. The robe has a gathered neckline closed with a small clasp, balloon sleeves gathered into cuffs and a black feather fringe running along the open front and hem. Black pointed pumps finish the look.",
+      "image": "34.jpg",
+      "material": "Satin-look weave with feather trim for the robe; printed swim fabric for the bikini",
+      "fabric": "The robe fabric is fluid and glossy, draping in soft folds, with a light feather border; the bikini is a smooth printed stretch fabric.",
+      "craftsmanship": "Feather trim is set along the hem and front edges of the robe, the neckline and cuffs are gathered, and the bikini carries strapping with ring hardware at the waist."
+    },
+    {
+      "id": "s26-035",
+      "title": "Black Satin Shirt Dress with Feather Trim",
+      "description": "A long black satin shirt dress worn open as a cover-up over a black and white zebra-print swimsuit. The dress has a pointed collar, full sleeves gathered into cuffs, a front button placket and a deep side slit, with a band of black ostrich-style feathers running down the front edges and around the hem. The look is finished with black pointed pumps.",
+      "image": "35.jpg",
+      "material": "Glossy satin, likely silk or a silk-look polyester, with feather trim",
+      "fabric": "Light and fluid with a high sheen, falling in soft folds and moving easily with the slit.",
+      "craftsmanship": "Feather fringe is applied along the placket edges and hemline, and the wide sleeves are gathered into narrow cuffs."
+    },
+    {
+      "id": "s26-036",
+      "title": "Zebra Print Swimsuit with Sheer Black Wrap Skirt",
+      "description": "A black and white zebra-print one-piece swimsuit with a plunging halter neckline and thin black straps, worn with a floor-length sheer black organza skirt tied at the waist. The skirt opens fully at the front and is gathered into a large knotted sash with a fabric rosette at the hip. Nude strappy heeled sandals complete the look.",
+      "image": "36.jpg",
+      "material": "Stretch swimwear jersey with a sheer organza overskirt",
+      "fabric": "The swimsuit is smooth and close-fitting, while the organza is crisp, transparent and catches the air as it moves.",
+      "craftsmanship": "The wrap skirt is hand-tied at the waist and trimmed with a gathered black fabric flower; the halter straps are finished narrow and knotted at the neck."
+    },
+    {
+      "id": "s26-037",
+      "title": "Zebra Print Swimsuit with Organza Wrap Skirt",
+      "description": "The same set seen from the front at the end of the runway: a zebra-print halter swimsuit under a sheer black organza wrap skirt tied at the waist. The skirt splits at the centre front and sweeps out to the sides, revealing the swimsuit beneath, with a black fabric rosette at the sash. Nude heeled sandals finish the look.",
+      "image": "37.jpg",
+      "material": "Stretch swimwear jersey with a sheer organza overskirt",
+      "fabric": "The organza is lightweight and transparent with a crisp hand, floating away from the body as the skirt opens.",
+      "craftsmanship": "A gathered black fabric flower decorates the knotted waist sash; the skirt panels are cut long and left to fan open at the front."
+    },
+    {
+      "id": "s26-038",
+      "title": "Zebra Swimsuit and Sheer Black Organza Skirt",
+      "description": "A zebra-print halter one-piece paired with a transparent black organza wrap skirt, here held out to one side to show the full width of the panel. The skirt is knotted at the waist with a black fabric rosette and falls to the floor with an open front. Nude heeled sandals complete the set.",
+      "image": "38.jpg",
+      "material": "Stretch swimwear jersey with a sheer organza overskirt",
+      "fabric": "The organza is fine and see-through with a springy body, so the skirt holds volume when lifted.",
+      "craftsmanship": "The waist tie and rosette are hand-formed from the same black organza; the skirt has no visible hardware and closes only with the knotted sash."
+    },
+    {
+      "id": "s26-039",
+      "title": "Zebra Halter Swimsuit with Organza Wrap and Rosettes",
+      "description": "Side view of the zebra-print halter swimsuit worn with the floor-length sheer black organza wrap skirt. From this angle the black fabric rosettes are visible at the waist and lower on the skirt, and the deep front opening shows the swimsuit's high-cut leg. Nude ankle-strap heeled sandals finish the look.",
+      "image": "39.jpg",
+      "material": "Stretch swimwear jersey with a sheer organza overskirt",
+      "fabric": "The organza is light and transparent, trailing behind and drifting out with each step.",
+      "craftsmanship": "Several black organza flowers are attached at the sash and along the skirt front, and the swimsuit straps are knotted by hand at the nape."
+    },
+    {
+      "id": "s26-040",
+      "title": "Black Linen Shirt with Sheer Sleeves and Shorts",
+      "description": "A men's set of a black linen shirt worn open and matching black linen shorts. The shirt body is opaque with a pointed collar and front buttons, while the sleeves are made of sheer black organza with a tonal embroidered motif and finished with solid cuffs. The shorts sit at the waist with a flat front and finish above the knee, and the look is worn barefoot.",
+      "image": "40.jpg",
+      "material": "Linen-look weave with sheer organza sleeves",
+      "fabric": "The linen is matt and mid-weight with a dry, slightly textured surface, while the organza sleeves are transparent and crisp.",
+      "craftsmanship": "Sheer organza sleeves are set into a woven linen body and carry a subtle embroidered motif, with the cuffs and collar made from the opaque cloth."
+    },
+    {
+      "id": "s26-041",
+      "title": "Black Linen Shirt and Shorts with Organza Sleeves",
+      "description": "The same men's set from the front at the end of the runway: an open black linen shirt with transparent black organza sleeves, over flat-front black linen shorts. The contrast between the opaque body and the sheer sleeves is the main detail of the look, which is worn barefoot.",
+      "image": "41.jpg",
+      "material": "Linen-look weave with sheer organza sleeves",
+      "fabric": "The linen has a dry, matt handle with a relaxed drape, and the organza sleeves are light and see-through.",
+      "craftsmanship": "Sheer sleeves are joined to a solid linen body and finished with linen cuffs; a fine embroidered motif runs along the sleeves."
+    },
+    {
+      "id": "s26-042",
+      "title": "Black Linen Shirt with Embroidered Sheer Sleeves",
+      "description": "Close view of the men's black linen shirt worn open over black linen shorts. The transparent organza sleeves show a swirling embroidered pattern in black thread, and the shirt has a pointed collar and a button front. The shorts are cut straight with a flat front, and the look is worn barefoot.",
+      "image": "42.jpg",
+      "material": "Linen-look weave with sheer organza sleeves",
+      "fabric": "Matt, mid-weight linen for the body and shorts, with crisp transparent organza in the sleeves.",
+      "craftsmanship": "The sheer sleeves carry tonal black embroidery in a curling motif and are set into the linen body with matching cuffs."
+    },
+    {
+      "id": "s26-043",
+      "title": "Metallic Cut-Out Swimsuit with Satin Robe",
+      "description": "A grey metallic one-piece swimsuit with side cut-outs and a scooped neckline, decorated with a black organza rosette at the chest. Over it is a short pale lilac satin robe with wide balloon sleeves and sheer lace insets across the shoulders. The look is finished with black strappy heeled sandals.",
+      "image": "43.jpg",
+      "material": "Glitter-finish stretch swimwear fabric with a satin robe and lace panels",
+      "fabric": "The swimsuit is smooth and close-fitting with a metallic shimmer, while the satin robe is light, glossy and flowing.",
+      "craftsmanship": "A hand-formed black organza flower sits at the neckline, and the robe has lace insets set into the shoulders and gathered balloon sleeves."
+    },
+    {
+      "id": "s26-044",
+      "title": "Grey Shimmer Swimsuit and Lilac Satin Robe",
+      "description": "The same set walking forward: a grey metallic swimsuit with cut-out sides and a black organza flower at the chest, worn under an open pale lilac satin robe. The robe falls to mid-thigh, with generous sleeves gathered at the elbow and sheer lace panels at the shoulders. Black strappy sandals finish the look.",
+      "image": "44.jpg",
+      "material": "Glitter-finish stretch swimwear fabric with a satin robe and lace panels",
+      "fabric": "The satin is lightweight with a soft sheen and gentle drape, and the swimsuit has a smooth metallic surface.",
+      "craftsmanship": "Lace insets at the shoulders of the robe, gathered sleeve heads, and a black organza rosette stitched to the swimsuit neckline."
+    },
+    {
+      "id": "s26-045",
+      "title": "Metallic Swimsuit with Organza Rosette and Satin Robe",
+      "description": "Close view of the grey shimmer one-piece with deep side cut-outs and a scoop neck, its black organza rosette pinned at the chest. The open pale lilac satin robe has soft balloon sleeves and sheer lace insets across the shoulder line. Black heeled sandals complete the look.",
+      "image": "45.jpg",
+      "material": "Glitter-finish stretch swimwear fabric with a satin robe and lace panels",
+      "fabric": "Smooth, shimmering stretch fabric for the swimsuit and a light, fluid satin for the robe.",
+      "craftsmanship": "The rosette is built from layered black organza, and the robe combines satin with hand-set lace panels and gathered sleeves."
+    },
+    {
+      "id": "s26-046",
+      "title": "Grey Cut-Out Swimsuit with Satin Cover-Up",
+      "description": "The grey metallic cut-out swimsuit and pale lilac satin robe seen from a distance at the end of the runway. The robe hangs open to mid-thigh with wide sleeves, and the black organza flower marks the neckline of the swimsuit. Black strappy heeled sandals finish the look.",
+      "image": "46.jpg",
+      "material": "Glitter-finish stretch swimwear fabric with a satin robe and lace panels",
+      "fabric": "Light satin with a soft sheen over a smooth metallic swimsuit.",
+      "craftsmanship": "Black organza rosette at the chest and lace insets in the shoulders of the robe."
+    },
+    {
+      "id": "s26-047",
+      "title": "Shimmer Swimsuit and Lilac Satin Robe with Lace",
+      "description": "Front view of the grey metallic swimsuit with cut-out sides and a black organza rosette, worn under an open pale lilac satin robe. The robe's wide sleeves gather at the elbow and its shoulders are set with sheer lace panels. Black strappy sandals complete the set.",
+      "image": "47.jpg",
+      "material": "Glitter-finish stretch swimwear fabric with a satin robe and lace panels",
+      "fabric": "The satin is fluid and glossy, the swimsuit smooth with a metallic shimmer.",
+      "craftsmanship": "Lace insets and gathered sleeves on the robe, and a layered black organza flower at the swimsuit neckline."
+    },
+    {
+      "id": "s26-048",
+      "title": "White Ruffled Bodysuit with Sheer Black Mini Skirt",
+      "description": "A white bodysuit with a plunging neckline edged in ruffles and thin straps, worn under a short sheer black organza skirt tied at the waist. Black fabric rosettes sit at the centre of the neckline and at the skirt sash, and a matching rosette cuff is worn at the wrist. The look ends in nude ankle-strap pumps.",
+      "image": "48.jpg",
+      "material": "Stretch fabric with a sheer organza skirt",
+      "fabric": "The bodysuit is smooth and fitted, while the organza skirt is crisp and transparent with a light flare.",
+      "craftsmanship": "Ruffled edging along the neckline, hand-formed black organza rosettes at the chest, waist and wrist, and a drawstring tie at the skirt."
+    },
+    {
+      "id": "s26-049",
+      "title": "White Bodysuit and Black Organza Skirt with Rosettes",
+      "description": "The same look: a white ruffle-trimmed bodysuit with a deep V neckline, a black rosette at the centre, and a sheer black organza mini skirt gathered onto a tied waistband. A second rosette sits at the hip and a rosette cuff is worn at the wrist. Nude ankle-strap pumps finish the look.",
+      "image": "49.jpg",
+      "material": "Stretch fabric with a sheer organza skirt",
+      "fabric": "Light, transparent organza that stands slightly away from the body over a smooth fitted bodysuit.",
+      "craftsmanship": "Ruffled neckline trim, black organza flowers at the neckline, waist and wrist, and a hand-tied drawstring at the skirt waist."
+    },
+    {
+      "id": "s26-050",
+      "title": "Ruffled White Bodysuit with Sheer Black Skirt",
+      "description": "The white ruffled bodysuit and sheer black organza mini skirt seen from a distance at the end of the runway. The skirt sash is tied at the front with a rosette, and a matching black rosette cuff is worn on one wrist. Nude ankle-strap pumps complete the look.",
+      "image": "50.jpg",
+      "material": "Stretch fabric with a sheer organza skirt",
+      "fabric": "Crisp transparent organza over a smooth fitted bodysuit.",
+      "craftsmanship": "Ruffle trim at the neckline and black organza rosettes at the chest, waist and wrist."
+    },
+    {
+      "id": "s26-051",
+      "title": "White Ruffle Bodysuit with Organza Skirt and Rosettes",
+      "description": "Front view of the white bodysuit with a ruffle-edged plunging neckline and thin straps, worn with a short sheer black organza skirt gathered onto a tied waistband. Black fabric rosettes decorate the neckline and the sash, and a rosette cuff is worn at the wrist. The look is finished with nude ankle-strap pumps.",
+      "image": "51.jpg",
+      "material": "Stretch fabric with a sheer organza skirt",
+      "fabric": "The organza is fine and see-through with enough body to flare from the waist, and the bodysuit is smooth and close-fitting.",
+      "craftsmanship": "Hand-gathered ruffles along the neckline, layered black organza rosettes at the chest, waist and wrist, and a drawstring waist tie with cord ends."
+    },
+    {
+      "id": "s26-052",
+      "title": "White Linen Shirt and Shorts with Organza Swim Cape",
+      "description": "Two looks walk side by side. The menswear set is a loose white linen shirt with sheer organza sleeves, worn open over a white linen tee and paired with relaxed white linen shorts and suede loafers. The womenswear look is a black strapless one-piece swimsuit under a sheer white organza cape that falls to the knee, fastened at the neck and finished with a white fabric flower at the chest and a second flower with a black bow at the hip.",
+      "image": "52.jpg",
+      "material": "Linen-look weave for the shirt and shorts; sheer organza for the sleeves and cape; smooth stretch swim fabric for the one-piece",
+      "fabric": "The linen pieces are crisp and lightweight with a soft crease, while the organza is glassy and translucent and floats away from the body as it moves.",
+      "craftsmanship": "Contrast organza sleeves set into a linen shirt body with a proper collar and cuffs; the cape has rolled edges and hand-made fabric flowers at the collarbone and hip."
+    },
+    {
+      "id": "s26-053",
+      "title": "Linen Organza-Sleeve Shirt and Black Swimsuit with Cape",
+      "description": "The same pair seen from the end of the runway. The menswear set is a white linen shirt with translucent organza sleeves over a white tee and white linen shorts, worn with suede loafers. The womenswear look is a black strapless one-piece with a sheer white organza cape tied at the neck, a white flower appliqué at the chest and a flower and bow detail at the hip.",
+      "image": "53.jpg",
+      "material": "Linen-look weave with sheer organza sleeves; organza cape over a stretch swim fabric one-piece",
+      "fabric": "Crisp, airy linen with a matte finish next to a fine, glassy organza that catches the light and drifts as the wearer walks.",
+      "craftsmanship": "Sheer sleeves joined to an opaque shirt body with a collar and buttoned cuffs; the cape is edged with a narrow rolled hem and trimmed with hand-made fabric flowers."
+    },
+    {
+      "id": "s26-054",
+      "title": "Black Strapless Swimsuit with Sheer Organza Cape",
+      "description": "A black strapless one-piece swimsuit worn under a floor-skimming cape of sheer white organza that fastens at the neck and falls open at the front. A large white fabric flower sits at the chest and a second white flower with a black satin bow is pinned at the hip. The look is finished with black pointed pumps.",
+      "image": "54.jpg",
+      "material": "Smooth stretch swim fabric; sheer organza cape",
+      "fabric": "The swimsuit is smooth and opaque with a slight sheen, while the organza is fine, crisp and translucent with a soft shimmer in the light.",
+      "craftsmanship": "Narrow rolled edges on the cape, a neat neckline binding at the collar, and hand-made layered fabric flowers with a satin bow at the hip."
+    },
+    {
+      "id": "s26-055",
+      "title": "Champagne Satin Cape with Bikini and Linen Menswear",
+      "description": "Two looks walk together. The womenswear look is a pale champagne bikini with a crystal-trimmed band under the bust and a beaded tie at the hips, layered with a long satin cape that gathers into a jewelled collar at the neck and falls to the floor at the back. The menswear set is a white linen shirt with sheer organza sleeves over a white tee, white linen shorts and suede loafers.",
+      "image": "55.jpg",
+      "material": "Satin-look silk or polyester for the cape; stretch swim fabric with crystal trim for the bikini; linen-look weave with organza sleeves for the shirt",
+      "fabric": "The cape is fluid and lustrous with a heavy drape that pools behind the wearer, while the linen is crisp and light and the organza sleeves are sheer.",
+      "craftsmanship": "Gathered neckline held by a decorative brooch collar, crystal and bead trim along the bikini band and hip ties, and organza sleeves set into a linen shirt body.",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-056",
+      "title": "Satin Halter Cape over Bikini and White Linen Set",
+      "description": "The two closing looks stand at the end of the runway as the finale walk gathers behind them. The womenswear look is a champagne bikini with a crystal band and beaded hip ties under a long satin cape that gathers into a jewelled collar and trails on the floor. The menswear set is a white linen shirt with sheer organza sleeves over a tee, white linen shorts and suede loafers.",
+      "image": "56.jpg",
+      "material": "Satin-look weave for the cape; stretch swim fabric with crystal trim; linen-look weave with sheer organza sleeves",
+      "fabric": "The satin cape is fluid and glossy with a long trailing drape, while the linen shirt and shorts are crisp, matte and lightweight.",
+      "craftsmanship": "Gathered neckline with a brooch collar, crystal and bead trim on the bikini, and translucent organza sleeves joined to an opaque linen shirt body.",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-057",
+      "title": "Finale",
+      "description": "A wide view of the finale walk, with the closing pair in white linen and champagne satin leading the full line of looks down the runway.",
+      "image": "57.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": "",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-058",
+      "title": "Champagne Satin Cape and Linen Organza-Sleeve Shirt",
+      "description": "The closing pair leads the finale line. The womenswear look is a pale champagne bikini with a crystal-trimmed band and beaded hip ties under a floor-length satin cape gathered into a jewelled collar at the neck. The menswear set is a white linen shirt with sheer organza sleeves worn over a white tee, with white linen shorts and suede loafers.",
+      "image": "58.jpg",
+      "material": "Satin-look weave for the cape; stretch swim fabric with crystal trim; linen-look weave with sheer organza sleeves",
+      "fabric": "The cape is smooth and lustrous with a heavy, fluid drape, while the linen pieces are crisp and airy with a matte finish.",
+      "craftsmanship": "Gathered satin held by a decorative collar clasp, crystal and bead trim on the bikini, and organza sleeves set into a linen shirt with a collar and cuffs.",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-059",
+      "title": "Closing Bow",
+      "description": "The atelier takes its bow, walking out between the closing pair in a white bib-front dress with fabric flower straps as the finale line applauds behind.",
+      "image": "59.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": ""
+    },
+    {
+      "id": "s26-060",
+      "title": "Closing Bow",
+      "description": "The bow at the end of the show, with the closing pair applauding on either side of the runway and the finale line waiting behind.",
+      "image": "60.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": ""
+    },
+    {
+      "id": "s26-061",
+      "title": "Closing Bow",
+      "description": "The bow at the end of the show, taken at the front of the runway between the white linen menswear look and the champagne satin cape.",
+      "image": "61.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": "",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-062",
+      "title": "Closing Bow",
+      "description": "The bow at the end of the show, with the closing looks on either side and the rest of the collection lined up behind.",
+      "image": "62.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": "",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-063",
+      "title": "Closing Bow",
+      "description": "The bow at the end of the show, hand in hand with the closing pair at the front of the runway.",
+      "image": "63.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": "",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-064",
+      "title": "Closing Bow",
+      "description": "The closing bow, arms raised with the two final looks as the audience applauds.",
+      "image": "64.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": "",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-065",
+      "title": "Finale",
+      "description": "The finale walk in progress, with the champagne satin cape, a gold metallic one-piece under an organza blouse and a sheer white organza mini dress passing each other on the runway.",
+      "image": "65.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": "",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-066",
+      "title": "Finale",
+      "description": "The finale walk seen along the runway, led by a gold metallic belted swimsuit under a sheer organza blouse with the satin cape look returning on the far side.",
+      "image": "66.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": "",
+      "orientation": "landscape"
+    },
+    {
+      "id": "s26-067",
+      "title": "Finale",
+      "description": "The finale walk from the end of the runway, with a black linen shirt with sheer sleeves and shorts, a white bodysuit with a black tulle skirt and the champagne cape all in motion.",
+      "image": "67.jpg",
+      "material": "",
+      "fabric": "",
+      "craftsmanship": "",
+      "orientation": "landscape"
+    }
+  ]
+}
