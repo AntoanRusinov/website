@@ -26,6 +26,7 @@
    <meta name="twitter:image" content="https://ivankaraykova.com/images/og-image.jpg">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous" referrerpolicy="no-referrer">
+   <link rel="stylesheet" href="fonts/fonts.css">
    <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -41,7 +42,7 @@
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle">Collections</a>
                      <div class="dropdown-content">
-                        <a href="collections/bulgarian-broderie/">Bulgarian broderie</a>
+                        <a href="collections/bulgarian-broderie/">Bulgarian Broderie</a>
                         <a href="collections/summer-2026/">Summer 2026</a>
                         <!-- <a href="">Winter 2024</a> -->
                      </div>
@@ -59,7 +60,7 @@
                   <li class="dropdown-mobile">
                      <a href="#">Collections</a>
                      <ul class="mobile-submenu">
-                        <li><a href="collections/bulgarian-broderie/">Bulgarian broderie</a></li>
+                        <li><a href="collections/bulgarian-broderie/">Bulgarian Broderie</a></li>
                         <li><a href="collections/summer-2026/">Summer 2026</a></li>
                         <!-- <li><a href="">Winter 2024</a></li> -->
                      </ul>
@@ -74,13 +75,19 @@
    </header>
    <!-- Hero Section -->
    <section class="hero">
-      <div class="hero-slide active">
-         <img src="images/hero.jpg" width="1696" height="2544" alt="Model on the runway in a white embroidered linen dress"
-            class="hero-img" fetchpriority="high">
-         <div class="container">
-            <div class="hero-content">
-               <h1 class="hero-title">IVANKA RAYKOVA</h1>
-               <p class="hero-subtitle">Contemporary Fashion with Traditional Embroidery</p>
+      <div class="hero-media">
+         <img src="images/hero-poster.jpg" width="1600" height="900"
+            alt="Runway moment from the Summer 2026 show" class="hero-img" fetchpriority="high">
+         <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+      </div>
+      <div class="container">
+         <div class="hero-content">
+            <p class="hero-kicker">Summer 2026</p>
+            <h1 class="hero-title">Contemporary Fashion with Traditional Embroidery</h1>
+            <p class="hero-subtitle">Handmade and made to order.</p>
+            <div class="hero-actions">
+               <a href="collections/summer-2026/" class="btn btn-light">See Summer 2026</a>
+               <a href="#contact" class="btn btn-outline">Request a piece</a>
             </div>
          </div>
       </div>
@@ -89,6 +96,7 @@
    <section id="collections" class="collections">
       <div class="container">
          <h2 class="section-title">Summer 2026</h2>
+         <p class="section-subtitle">The new collection, shown at Summer Fashion Weekend 2026.</p>
          <div class="collection-grid home-collection">
             <!-- First item (visible on both mobile and desktop) -->
             <a href="collections/summer-2026/" class="collection-item main-item"
@@ -114,16 +122,18 @@
                   sizes="25vw" width="800" height="1200" alt="" class="collection-img" loading="lazy">
             </a>
          </div>
+         <p class="section-action"><a href="collections/summer-2026/" class="text-link">View the collection</a></p>
       </div>
    </section>
-   <!-- Bulgarian broderie -->
+   <!-- Bulgarian Broderie -->
    <section id="bulgarian-broderie" class="collections collections-secondary">
       <div class="container">
-         <h2 class="section-title">Bulgarian broderie</h2>
+         <h2 class="section-title">Bulgarian Broderie</h2>
+         <p class="section-subtitle">Traditional Bulgarian embroidery in contemporary silhouettes.</p>
          <div class="collection-grid home-collection">
             <!-- First item (visible on both mobile and desktop) -->
             <a href="collections/bulgarian-broderie/" class="collection-item main-item"
-               aria-label="Open the Bulgarian broderie collection">
+               aria-label="Open the Bulgarian Broderie collection">
                <img src="collections/bulgarian-broderie/images/1-800.jpg"
                   srcset="collections/bulgarian-broderie/images/1-800.jpg 800w, collections/bulgarian-broderie/images/1.jpg 1600w"
                   sizes="(max-width: 768px) 100vw, 25vw" width="800" height="1200"
@@ -146,6 +156,7 @@
                   sizes="25vw" width="800" height="1200" alt="" class="collection-img" loading="lazy">
             </a>
          </div>
+         <p class="section-action"><a href="collections/bulgarian-broderie/" class="text-link">View the collection</a></p>
       </div>
    </section>
    <!-- About -->
@@ -184,7 +195,7 @@
          <h2 class="section-title">Atelier Services</h2>
          <hr class="section-separator">
          <div class="atelier-content">
-            <div class="service-section">
+            <div class="service-section atelier-card">
                <h3>1. Custom Design / Made-to-Measure Garments</h3>
                <p>If you're looking for a one-of-a-kind piece made exclusively for you—tailored to your style,
                   measurements, and personality—this service is for you. We believe fashion should be personal,
@@ -229,9 +240,7 @@
                <p>We don't just create clothes — we create wearable stories, tailored to express who you are.</p>
             </div>
 
-            <hr class="service-separator">
-
-            <div class="service-section">
+            <div class="service-section atelier-card">
                <h3>2. Tailoring & Alterations</h3>
                <p><strong>Professional adjustments and garment repair tailored to your body and lifestyle</strong><br>
                   We believe that clothing should fit your body—not the other way around. Whether you're looking to
@@ -340,7 +349,7 @@
             <div class="footer-col">
                <h3 class="footer-heading">Collections</h3>
                <ul class="footer-nav">
-                  <li><a href="collections/bulgarian-broderie/">Bulgarian broderie</a></li>
+                  <li><a href="collections/bulgarian-broderie/">Bulgarian Broderie</a></li>
                   <li><a href="collections/summer-2026/">Summer 2026</a></li>
                   <!-- <li><a href="">Winter 2024</a></li> -->
                </ul>
@@ -396,6 +405,23 @@
             mobileNavToggle.setAttribute('aria-label', 'Open navigation menu');
          });
       });
+
+      // Hero film: a short muted loop, only on larger screens and when the
+      // visitor has not asked for reduced motion or data saving. Phones and
+      // everyone else keep the still photo.
+      const heroVideo = document.querySelector('.hero-video');
+      const wantsVideo = window.matchMedia('(min-width: 769px)').matches
+         && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+         && !(navigator.connection && navigator.connection.saveData);
+      if (heroVideo && wantsVideo && heroVideo.canPlayType('video/mp4')) {
+         const source = document.createElement('source');
+         source.src = 'video/hero-loop.mp4';
+         source.type = 'video/mp4';
+         heroVideo.appendChild(source);
+         heroVideo.addEventListener('playing', () => heroVideo.classList.add('is-playing'), { once: true });
+         heroVideo.load();
+         heroVideo.play().catch(() => { /* autoplay refused: the still photo stays */ });
+      }
 
       // Header scroll effect
       const header = document.querySelector('header');
