@@ -4,8 +4,8 @@
     --secondary-color: #212121;
     --accent-color: #e9e5dc;
     --border-color: #e0d9cb;
-    --font-main: 'Montserrat', sans-serif;
-    --font-secondary: 'Cormorant Garamond', serif;
+    --font-main: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    --font-secondary: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
     --transition: all 0.3s ease;
     --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
@@ -22,7 +22,7 @@ body {
     background-color: var(--primary-color);
     line-height: 1.6;
     overflow-x: hidden;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: 80px;
     /* Adjust this value based on your header height */
 }
@@ -138,6 +138,7 @@ body {
 .logo {
     font-family: var(--font-secondary);
     font-size: 1.8rem;
+    font-weight: 600;
     letter-spacing: 2px;
 }
 
@@ -328,7 +329,7 @@ body {
     font-family: var(--font-secondary);
     position: relative;
     padding-bottom: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
@@ -659,6 +660,7 @@ footer {
 .footer-logo {
     font-family: var(--font-secondary);
     font-size: 1.5rem;
+    font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 1rem;
 }

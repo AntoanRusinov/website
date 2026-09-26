@@ -37,6 +37,8 @@ collections/<name>/images/         Collection images: <n>.jpg (1600px wide) + <n
 images/                            Site-wide images: hero, about, og-image, favicon, touch icon
 styles/main.css                    Shared styles for the home page
 styles/legal.css                   Shared styles for the legal/info and 404 pages
+fonts/                             Self-hosted Montserrat + Cormorant Garamond (woff2, OFL) and fonts.css
+video/hero-loop.mp4                Short muted runway loop for the home page hero (desktop only)
 styles/collection-template.css     Styles for collection pages
 scripts/collection-template.js     Builds a collection page from its data.json
 ```
@@ -74,6 +76,17 @@ for width, suffix, q in ((1600, '', 82), (800, '-800', 80)):
 ```
 
 `images/og-image.jpg` (1200x630) is the link preview used by social networks and messengers.
+
+## Fonts and hero film
+
+Both font families are served from `fonts/` (latin subset, SIL Open Font License) so no font
+request leaves the site. `fonts/fonts.css` holds the `@font-face` rules; every page links it before
+its own stylesheet.
+
+The home page hero shows `images/hero-poster.jpg` and, on screens wider than 768px without
+reduced-motion or data-saver preferences, fades in `video/hero-loop.mp4` (about 18 seconds, muted,
+looping, H.264 720p). To replace the loop, cut a new clip with ffmpeg, keep it under ~4 MB, export
+its first frame as the poster, and keep the file names.
 
 ## Third-party assets
 
