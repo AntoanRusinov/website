@@ -558,25 +558,36 @@ button:focus-visible {
     object-position: center top;
 }
 
-/* Landscape photos: one column, photo across the full width, text below */
-.product-detail.is-landscape .detail-container {
+/* Wide presentation: one column, photo across the full width, text below.
+   Used for every landscape photo and for portrait photos flagged layout: "wide". */
+.product-detail.is-wide .detail-container {
     grid-template-columns: 1fr;
     max-width: 1400px;
     gap: 24px;
 }
 
-.product-detail.is-landscape .detail-image {
+.product-detail.is-wide .detail-image {
     height: auto;
     max-height: none;
 }
 
-.product-detail.is-landscape .detail-image img {
+.product-detail.is-wide .detail-image img {
     height: auto;
-    aspect-ratio: 3 / 2;
     object-fit: cover;
 }
 
-.product-detail.is-landscape .detail-info {
+.product-detail.is-landscape .detail-image img {
+    aspect-ratio: 3 / 2;
+}
+
+/* A portrait photo shown wide keeps its own proportions, capped so it does
+   not become a wall on large screens */
+.product-detail.is-wide:not(.is-landscape) .detail-image {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.product-detail.is-wide .detail-info {
     max-width: 800px;
 }
 
@@ -633,10 +644,12 @@ button:focus-visible {
         height: 62vh;
     }
 
-    .product-detail.is-landscape .detail-image {
+    .product-detail.is-wide .detail-image,
+    .product-detail.is-wide:not(.is-landscape) .detail-image {
         height: auto;
+        max-width: none;
         margin: 0 -16px;
-        /* edge to edge on phones so landscape photos get every pixel of width */
+        /* edge to edge on phones so wide photos get every pixel of width */
     }
 
     .detail-nav {

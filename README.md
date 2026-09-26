@@ -49,8 +49,9 @@ Edit the relevant `collections/<name>/data.json`. Top level: `title`, `descripti
 `video` (`youtubeId`, `title`) which renders the embedded player only when present, and
 `imageWidth` (pixel width of the full-size photos). Each item needs `id`, `title`, `image`
 (filename inside that folder's `images/`) and may carry `description`, `material`, `fabric`,
-`craftsmanship` (empty values are hidden in the detail view) and `orientation: "landscape"`
-for photos that are wider than tall.
+`craftsmanship` (empty values are hidden in the detail view), `orientation: "landscape"`
+for photos that are wider than tall, and `layout: "wide"` to show a portrait photo across the full
+width of the detail view (group photos).
 
 To add a collection, copy an existing `collections/<name>/` folder, replace `data.json` and
 `images/`, adjust the `<title>`, meta tags and `<h1>` in its `index.html`, and add the link to

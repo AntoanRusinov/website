@@ -6,7 +6,8 @@
 //   video.youtubeId, video.title  optional; renders the embedded player
 //   imageWidth                    width of the full-size <n>.jpg files (default 1600)
 //   items[]                       id, title, description, image, material, fabric,
-//                                 craftsmanship, optional orientation: "landscape"
+//                                 craftsmanship, optional orientation: "landscape",
+//                                 optional layout: "wide" (portrait photo shown full width)
 //
 // Image files per item: <n>.jpg (full size, detail view), <n>-800.jpg (grid
 // thumbnail, 800x1200). Landscape photos also have <n>-1200.jpg, a 1200x1800
@@ -151,8 +152,10 @@ function showItem(index) {
     img.src = IMAGE_DIR + item.image;
     img.alt = item.title;
     // Landscape photos take the full width of the dialog with the text below;
-    // portrait photos keep the two-column layout.
+    // portrait photos keep the two-column layout unless the item asks for the
+    // wide presentation (layout: "wide"), used for group photos.
     detail.classList.toggle('is-landscape', item.orientation === 'landscape');
+    detail.classList.toggle('is-wide', item.orientation === 'landscape' || item.layout === 'wide');
     document.getElementById('detail-counter').textContent = `${currentIndex + 1} / ${items.length}`;
     document.getElementById('detail-title').textContent = item.title;
     setField('detail-description', item.description);
